@@ -36,8 +36,8 @@ CREATE TABLE Room (
 );
 
 CREATE TABLE Amenity (
-    AmenityID SERIAL,
-    Name VARCHAR(50) UNIQUE,
+	AmenityID SERIAL,
+	Name VARCHAR(50) UNIQUE,
 	PRIMARY KEY(AmenityID)
 );
 
@@ -45,9 +45,9 @@ CREATE TABLE RoomAmenity (
 	RoomNum INTEGER,
 	HotelID SERIAL,
 	AmenityID SERIAL,
-    PRIMARY KEY (RoomNum,AmenityID),
-    FOREIGN KEY (RoomNum,HotelID) REFERENCES Room(RoomNum,HotelID),
-    FOREIGN KEY (AmenityID) REFERENCES Amenity(AmenityID)
+	PRIMARY KEY (RoomNum,AmenityID),
+	FOREIGN KEY (RoomNum,HotelID) REFERENCES Room(RoomNum,HotelID),
+	FOREIGN KEY (AmenityID) REFERENCES Amenity(AmenityID)
 );
 
 CREATE TABLE Employee (
