@@ -54,7 +54,7 @@ CREATE TABLE Renting (
 	EmployeeSIN INTEGER,
 	PRIMARY KEY(RentingID,HotelID,RoomNum),
 	FOREIGN KEY(HotelID) REFERENCES Hotel,
-	FOREIGN KEY(RoomNum) REFERENCES Room(RoomNum) on delete cascade,
+	FOREIGN KEY(RoomNum, HotelID) REFERENCES Room(RoomNum,HotelID),
 	FOREIGN KEY(EmployeeSIN) REFERENCES Employee
 );
 
@@ -63,21 +63,6 @@ CREATE TABLE Manager(
 	HotelID INTEGER,
 	PRIMARY KEY(ManagerID),
 	FOREIGN KEY(HotelID) REFERENCES Hotel
-);
-
-CREATE TABLE Booking (
-	BookingID INTEGER,
-	HotelID INTEGER,
-	RoomNum INTEGER,
-	BookingDate DATE,
-	CheckInDate DATE,
-	CustomerID INTEGER,
-	EmployeeSIN INTEGER,
-	PRIMARY KEY(BookingID,HotelID,RoomNum),
-	FOREIGN KEY(HotelID) REFERENCES Hotel,
-	FOREIGN KEY(RoomNum) REFERENCES Room,
-	FOREIGN KEY(CustomerID) REFERENCES Customer,
-	FOREIGN KEY(EmployeeSIN) REFERENCES Employee
 );
 
 CREATE TABLE Customer(
@@ -91,12 +76,29 @@ CREATE TABLE Customer(
 	FOREIGN KEY(EmployeeSIN) REFERENCES Employee
 );
 
+CREATE TABLE Booking (
+	BookingID INTEGER,
+	HotelID INTEGER,
+	RoomNum INTEGER,
+	BookingDate DATE,
+	CheckInDate DATE,
+	CustomerID INTEGER,
+	EmployeeSIN INTEGER,
+	PRIMARY KEY(BookingID,HotelID,RoomNum),
+	FOREIGN KEY(HotelID) REFERENCES Hotel,
+	FOREIGN KEY(RoomNum, HotelID) REFERENCES Room(RoomNum, HotelID),
+	FOREIGN KEY(CustomerID) REFERENCES Customer,
+	FOREIGN KEY(EmployeeSIN) REFERENCES Employee
+);
+
 CREATE TABLE transforms(
 	EmployeeSIN INTEGER,
 	BookingID INTEGER,
+	HotelID INTEGER, -- were added to adhere to Booking pkey
+	RoomNum INTEGER,
 	PRIMARY KEY(EmployeeSIN,BookingID),
 	FOREIGN KEY(EmployeeSIN) REFERENCES Employee,
-	FOREIGN KEY(BookingID) REFERENCES Booking
+	FOREIGN KEY(BookingID,HotelID,RoomNum) REFERENCES Booking(BookingID,HotelID,RoomNum)
 );
 
 
