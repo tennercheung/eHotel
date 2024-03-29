@@ -25,8 +25,8 @@ CREATE TABLE Room (
 	RoomNum INTEGER,
 	HotelID INTEGER,
 	Amenities VARCHAR(20),
-	Price NUMERIC(8,2), /* check precision */
-	Extendability INTEGER,/* # of days */
+	Price NUMERIC(8,2),-- check precision
+	Extendability INTEGER,-- # of days
 	Problem VARCHAR(20),
 	RoomView VARCHAR(20),
 	Capacity INTEGER,
@@ -34,8 +34,8 @@ CREATE TABLE Room (
 	FOREIGN KEY(HotelID) REFERENCES Hotel
 );
 
-ALTER TABLE Room DROP CONSTRAINT room_pkey;
-ALTER TABLE Room ADD CONSTRAINT unique_room_hotel_id UNIQUE (RoomNum, HotelID);
+-- ALTER TABLE Room DROP CONSTRAINT room_pkey;
+-- ALTER TABLE Room ADD CONSTRAINT unique_room_hotel_id UNIQUE (RoomNum, HotelID);
 
 CREATE TABLE Employee (
 	EmployeeSIN INTEGER,
