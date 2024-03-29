@@ -36,8 +36,9 @@ CREATE TABLE Room (
 );
 
 CREATE TABLE Amenity (
-    AmenityID SERIAL PRIMARY KEY,
-    Name VARCHAR(50) UNIQUE
+    AmenityID SERIAL,
+    Name VARCHAR(50) UNIQUE,
+	PRIMARY KEY(AmenityID)
 );
 
 CREATE TABLE RoomAmenity (
