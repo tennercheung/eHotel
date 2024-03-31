@@ -38,3 +38,37 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 (310,230284,'Mini-bar');
 
 SELECT * from RoomAmenity;
+
+DELETE from Employee;
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(123321111,'Chef','John Doe','6201 Gulf Fwy, Texas City, TX 77591',1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(876678565,'Concierge','Jane Robbins','2760 Iger St, New Braunfels, TX 78130',1);
+
+SELECT * from Employee;
+
+
+INSERT INTO Renting(RentingID,HotelID,RentingDate,RoomNum,EmployeeSIN) VALUES
+(20220, 230284,'January 20, 2024',310,123321111);
+
+SELECT * from Renting;
+
+INSERT INTO Manager(ManagerID,HotelID) VALUES
+(230444220,230284);
+
+SELECT * from Manager;
+
+INSERT INTO Customer(CustomerID,Addr,RegistrationDate,IDType,FullName,EmployeeSIN) VALUES
+(310322,'598 TX St, Lake Jackson, TX 77566','January 19, 2024', 'Driver''s License', 'Jack Jones',876678565);
+
+SELECT * from Customer;
+
+INSERT INTO Booking(BookingID,HotelID,RoomNum,BookingDate,CheckInDate,CustomerID,EmployeeSIN) VALUES
+(3029489,230284,310,'January 9, 2024','January 19, 2024',310322,876678565);
+
+SELECT * from Booking;
+
+INSERT INTO transforms(EmployeeSIN,BookingID,HotelID,RoomNum) VALUES
+(876678565,3029489,230284,310);
+
+SELECT * from transforms;

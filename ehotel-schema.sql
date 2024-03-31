@@ -47,10 +47,9 @@ CREATE TABLE Employee (
 	EmployeeSIN SERIAL UNIQUE,
 	PositionName VARCHAR(20) CHECK (PositionName IN ('Manager', 'Concierge', 'Chef', 'Waiter', 'Cleaner', 'Security', 'Valet')), 
 	FullName VARCHAR(100) CHECK (FullName ~* '^[A-Z][a-z]+(\s[A-Z][a-z]+)*$'),
-	CentralOfficeAddr VARCHAR(100),
+	Addr VARCHAR(100) UNIQUE CHECK (Addr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*,\s*[A-Z]{2}\s+[0-9]{5}$'),
 	NumHotels INTEGER,
-	PRIMARY KEY(EmployeeSIN),
-	FOREIGN KEY(CentralOfficeAddr) REFERENCES Hotel(addr) -- this might be useful
+	PRIMARY KEY(EmployeeSIN)
 );
 
 CREATE TABLE Renting (
