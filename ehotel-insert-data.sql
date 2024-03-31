@@ -51,58 +51,58 @@ INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 
 
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330210,9193,'info@sheratonhotels-NewYork0-az.com',3048204944,5,'83 County Rd, NewYork AZ 32049',1);
+(330210,9193,'info@sheratonhotels-NewYork0-az.com',3048204944,5,'83 County Rd, NewYork, AZ 32049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330211,9193,'info@sheratonhotels-NewYork1-az.com',3148204944,5,'84 County Rd, NewYork AZ 32049',1);
+(330211,9193,'info@sheratonhotels-NewYork1-az.com',3148204944,5,'84 County Rd, NewYork, AZ 32049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330212,9193,'info@sheratonhotels-NewYork2-az.com',3248204944,5,'85 County Rd, NewYork AZ 32049',2);
+(330212,9193,'info@sheratonhotels-NewYork2-az.com',3248204944,5,'85 County Rd, NewYork, AZ 32049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330213,9193,'info@sheratonhotels-NewYork3-az.com',3348204944,5,'86 County Rd, NewYork AZ 32049',2);
+(330213,9193,'info@sheratonhotels-NewYork3-az.com',3348204944,5,'86 County Rd, NewYork, AZ 32049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330214,9193,'info@sheratonhotels-NewYork4-az.com',3448204944,5,'87 County Rd, NewYork AZ 32049',1);
+(330214,9193,'info@sheratonhotels-NewYork4-az.com',3448204944,5,'87 County Rd, NewYork, AZ 32049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330215,9193,'info@sheratonhotels-NewYork5-az.com',3548204944,5,'88 County Rd, NewYork AZ 32049',3);
+(330215,9193,'info@sheratonhotels-NewYork5-az.com',3548204944,5,'88 County Rd, NewYork, AZ 32049',3);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330216,9193,'info@sheratonhotels-NewYork6-az.com',3648204944,5,'89 County Rd, NewYork AZ 32049',3);
+(330216,9193,'info@sheratonhotels-NewYork6-az.com',3648204944,5,'89 County Rd, NewYork, AZ 32049',3);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330217,9193,'info@sheratonhotels-NewYork7-az.com',3748204944,5,'90 County Rd, NewYork AZ 32049',3);
+(330217,9193,'info@sheratonhotels-NewYork7-az.com',3748204944,5,'90 County Rd, NewYork, AZ 32049',3);
 
 
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430210,7524,'info@deltahotels-SanFrancisco0-az.com',4048204944,5,'90 County Rd, SanFrancisco AZ 42049',1);
+(430210,7524,'info@deltahotels-SanFrancisco0-az.com',4048204944,5,'90 County Rd, SanFrancisco, AZ 42049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430211,7524,'info@deltahotels-SanFrancisco1-az.com',4148204944,5,'91 County Rd, SanFrancisco AZ 42049',1);
+(430211,7524,'info@deltahotels-SanFrancisco1-az.com',4148204944,5,'91 County Rd, SanFrancisco, AZ 42049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430212,7524,'info@deltahotels-SanFrancisco2-az.com',4248204944,5,'92 County Rd, SanFrancisco AZ 42049',2);
+(430212,7524,'info@deltahotels-SanFrancisco2-az.com',4248204944,5,'92 County Rd, SanFrancisco, AZ 42049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430213,7524,'info@deltahotels-SanFrancisco3-az.com',4348204944,5,'93 County Rd, SanFrancisco AZ 42049',2);
+(430213,7524,'info@deltahotels-SanFrancisco3-az.com',4348204944,5,'93 County Rd, SanFrancisco, AZ 42049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430214,7524,'info@deltahotels-SanFrancisco4-az.com',4448204944,5,'94 County Rd, SanFrancisco AZ 42049',2);
+(430214,7524,'info@deltahotels-SanFrancisco4-az.com',4448204944,5,'94 County Rd, SanFrancisco, AZ 42049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430215,7524,'info@deltahotels-SanFrancisco5-az.com',4548204944,5,'95 County Rd, SanFrancisco AZ 42049',3);
+(430215,7524,'info@deltahotels-SanFrancisco5-az.com',4548204944,5,'95 County Rd, SanFrancisco, AZ 42049',3);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430216,7524,'info@deltahotels-SanFrancisco6-az.com',4648204944,5,'96 County Rd, SanFrancisco AZ 42049',3);
+(430216,7524,'info@deltahotels-SanFrancisco6-az.com',4648204944,5,'96 County Rd, SanFrancisco, AZ 42049',3);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430217,7524,'info@deltahotels-SanFrancisco7-az.com',4748204944,5,'97 County Rd, SanFrancisco AZ 42049',3);
+(430217,7524,'info@deltahotels-SanFrancisco7-az.com',4748204944,5,'97 County Rd, SanFrancisco, AZ 42049',3);
 
 
 
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530210,2049,'info@marriotthotels-SouthCounty0-az.com',5048204944,5,'99 County Rd, SouthCounty AZ 52049',1);
+(530210,2049,'info@marriotthotels-SouthCounty0-az.com',5048204944,5,'99 County Rd, SouthCounty, AZ 52049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530211,2049,'info@marriotthotels-SouthCounty1-az.com',5148204944,5,'100 County Rd, SouthCounty AZ 52049',1);
+(530211,2049,'info@marriotthotels-SouthCounty1-az.com',5148204944,5,'100 County Rd, SouthCounty, AZ 52049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530212,2049,'info@marriotthotels-SouthCounty2-az.com',5248204944,5,'101 County Rd, SouthCounty AZ 52049',1);
+(530212,2049,'info@marriotthotels-SouthCounty2-az.com',5248204944,5,'101 County Rd, SouthCounty, AZ 52049',1);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530213,2049,'info@marriotthotels-SouthCounty3-az.com',5348204944,5,'102 County Rd, SouthCounty AZ 52049',2);
+(530213,2049,'info@marriotthotels-SouthCounty3-az.com',5348204944,5,'102 County Rd, SouthCounty, AZ 52049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530214,2049,'info@marriotthotels-SouthCounty4-az.com',5448204944,5,'103 County Rd, SouthCounty AZ 52049',2);
+(530214,2049,'info@marriotthotels-SouthCounty4-az.com',5448204944,5,'103 County Rd, SouthCounty, AZ 52049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530215,2049,'info@marriotthotels-SouthCounty5-az.com',5548204944,5,'104 County Rd, SouthCounty AZ 52049',2);
+(530215,2049,'info@marriotthotels-SouthCounty5-az.com',5548204944,5,'104 County Rd, SouthCounty, AZ 52049',2);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530216,2049,'info@marriotthotels-SouthCounty6-az.com',5648204944,5,'105 County Rd, SouthCounty AZ 52049',3);
+(530216,2049,'info@marriotthotels-SouthCounty6-az.com',5648204944,5,'105 County Rd, SouthCounty, AZ 52049',3);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530217,2049,'info@marriotthotels-SouthCounty7-az.com',5748204944,5,'106 County Rd, SouthCounty AZ 52049',3);
+(530217,2049,'info@marriotthotels-SouthCounty7-az.com',5748204944,5,'106 County Rd, SouthCounty, AZ 52049',3);
 
 
 
