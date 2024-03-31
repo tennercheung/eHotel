@@ -1,11 +1,12 @@
 SET search_path = "ehotel";
-DROP TABLE IF EXISTS HotelChain, Hotel, Room, Amenity, RoomAmenity, Employee, Renting, Manager, Customer, Booking, transforms;
+DROP TABLE IF EXISTS HotelChain, Hotel, Room, RoomAmenity, Employee, Renting, Manager, Customer, Booking, transforms;
 
 CREATE TABLE HotelChain (
 	ChainID SERIAL UNIQUE,
 	PhoneNum VARCHAR(10) UNIQUE CHECK (PhoneNum ~* '^\+?[0-9]{10}$'),
 	Email VARCHAR(100) UNIQUE CHECK (Email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'),
-	CentralOfficeAddr VARCHAR(100) UNIQUE CHECK (CentralOfficeAddr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*[0-9]+,\s*[a-zA-Z\s]+$'),
+	CentralOfficeAddr VARCHAR(100) UNIQUE CHECK
+	(CentralOfficeAddr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*,\s*[A-Z]{2}\s+[0-9]{5}$'),
 	NumHotels INTEGER,
 	PRIMARY KEY(ChainID)
 );
@@ -16,7 +17,7 @@ CREATE TABLE Hotel (
 	Email VARCHAR(100) UNIQUE CHECK (Email ~* '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'),
 	PhoneNum VARCHAR(10) UNIQUE CHECK (PhoneNum ~* '^\+?[0-9]{10}$'),
 	NumRooms INTEGER,
-	Addr VARCHAR(100) UNIQUE CHECK (Addr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*[0-9]+,\s*[a-zA-Z\s]+$'),
+	Addr VARCHAR(100) UNIQUE CHECK (Addr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*,\s*[A-Z]{2}\s+[0-9]{5}$'),
 	Category VARCHAR(20) CHECK (Category IN ('1', '2', '3', '4', '5')), -- ex. 5 of them total
 	PRIMARY KEY(HotelID),
 	FOREIGN KEY(ChainID) REFERENCES HotelChain
@@ -25,7 +26,7 @@ CREATE TABLE Hotel (
 CREATE TABLE Room (
 	RoomNum INTEGER UNIQUE,
 	HotelID SERIAL,
-	Amenities VARCHAR(20), -- may be better as a list to choose from
+	--Amenities TEXT[], -- may be better as a list to choose from
 	Price NUMERIC(5,2),-- ex. 10000.00
 	Extendability INTEGER,-- # of days
 	Problem VARCHAR(20),
@@ -35,19 +36,11 @@ CREATE TABLE Room (
 	FOREIGN KEY(HotelID) REFERENCES Hotel
 );
 
-CREATE TABLE Amenity (
-	AmenityID SERIAL,
-	Name VARCHAR(50) UNIQUE,
-	PRIMARY KEY(AmenityID)
-);
-
 CREATE TABLE RoomAmenity (
-	RoomNum INTEGER,
-	HotelID SERIAL,
-	AmenityID SERIAL,
-	PRIMARY KEY (RoomNum,AmenityID),
-	FOREIGN KEY (RoomNum,HotelID) REFERENCES Room(RoomNum,HotelID),
-	FOREIGN KEY (AmenityID) REFERENCES Amenity(AmenityID)
+    RoomNum INTEGER,
+    HotelID SERIAL,
+    Amenity VARCHAR(20),
+    FOREIGN KEY(RoomNum, HotelID) REFERENCES Room(RoomNum, HotelID)
 );
 
 CREATE TABLE Employee (
@@ -81,7 +74,7 @@ CREATE TABLE Manager(
 
 CREATE TABLE Customer(
 	CustomerID SERIAL UNIQUE,
-	Addr VARCHAR(100) UNIQUE CHECK (Addr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*[0-9]+,\s*[a-zA-Z\s]+$'),
+	Addr VARCHAR(100) UNIQUE CHECK (Addr ~* '^[0-9]+\s+[a-zA-Z0-9\s]+,\s*[a-zA-Z\s]+\s*,\s*[A-Z]{2}\s+[0-9]{5}$'),
 	RegistrationDate DATE,
 	IDType VARCHAR(20) CHECK (IDType IN ('Driver''s License', 'Health Card', 'Passport')),
 	FullName VARCHAR(100) CHECK (FullName ~* '^[A-Z][a-z]+(\s[A-Z][a-z]+)*$'),
