@@ -120,10 +120,621 @@ INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 (530219,2049,'info@marriotthotels-SouthCounty9-az.com',5948204944,5,'108 County Rd, SouthCounty AZ 52049',3);
 
+
+
+
+
+
 SELECT * FROM Hotel;
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(310,230284,350.00,7,'None','Partial-View',4);
+(510,530210,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(511,530210,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(512,530210,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(513,530210,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(514,530210,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(515,530211,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(516,530211,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(517,530211,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(518,530211,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(519,530211,310.00,1,'None','View',1);
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(520,530212,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(521,530212,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(522,530212,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(523,530212,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(524,530212,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(525,530213,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(526,530213,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(527,530213,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(528,530213,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(529,530213,310.00,1,'None','View',1);
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(530,530214,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(531,530214,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(532,530214,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(533,530214,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(534,530214,310.00,1,'None','View',1);
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(535,530215,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(536,530215,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(537,530215,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(538,530215,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(539,530215,310.00,1,'None','View',1);
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(540,530216,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(541,530216,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(542,530216,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(543,530216,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(544,530216,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(545,530217,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(546,530217,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(547,530217,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(548,530217,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(549,530217,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(550,530218,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(551,530218,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(552,530218,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(553,530218,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(554,530218,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(555,530219,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(556,530219,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(557,530219,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(558,530219,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(559,530219,310.00,1,'None','View',1);
+
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(410,430210,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(411,430210,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(412,430210,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(413,430210,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(414,430210,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(415,430211,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(416,430211,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(417,430211,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(418,430211,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(419,430211,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(420,430212,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(421,430212,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(422,430212,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(423,430212,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(424,430212,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(425,430213,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(426,430213,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(427,430213,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(428,430213,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(429,430213,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(430,430214,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(431,430214,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(432,430214,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(433,430214,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(434,430214,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(435,430215,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(436,430215,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(437,430215,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(438,430215,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(439,430215,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(440,430216,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(441,430216,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(442,430216,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(443,430216,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(444,430216,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(445,430217,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(446,430217,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(447,430217,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(448,430217,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(449,430217,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(450,430218,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(451,430218,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(452,430218,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(453,430218,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(454,430218,310.00,1,'None','View',1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(310,330210,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(311,330210,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(312,330210,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(313,330210,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(314,330210,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(315,330211,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(316,330211,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(317,330211,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(318,330211,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(319,330211,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(320,330212,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(321,330212,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(322,330212,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(323,330212,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(324,330212,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(325,330213,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(326,330213,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(327,330213,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(328,330213,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(329,330213,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(330,330214,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(331,330214,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(332,330214,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(333,330214,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(334,330214,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(335,330215,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(336,330215,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(337,330215,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(338,330215,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(339,330215,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(340,330216,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(341,330216,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(342,330216,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(343,330216,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(344,330216,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(345,330217,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(346,330217,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(347,330217,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(348,330217,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(349,330217,310.00,1,'None','View',1);
+
+
+
+
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(110,130294,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(111,130294,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(112,130294,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(113,130294,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(114,130294,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(115,130295,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(116,130295,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(117,130295,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(118,130295,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(119,130295,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(120,130296,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(121,130296,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(122,130296,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(123,130296,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(124,130296,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(125,130297,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(126,130297,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(127,130297,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(128,130297,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(129,130297,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(130,130298,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(131,130298,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(132,130298,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(133,130298,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(134,130298,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(135,130299,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(136,130299,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(137,130299,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(138,130299,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(139,130299,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(140,130210,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(141,130210,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(142,130210,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(143,130210,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(144,130210,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(145,130211,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(146,130211,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(147,130211,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(148,130211,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(149,130211,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(150,130212,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(151,130212,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(152,130212,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(153,130212,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(154,130212,310.00,1,'None','View',1);
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(155,130213,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(156,130213,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(157,130213,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(158,130213,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(159,130213,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(160,130214,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(161,130214,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(162,130214,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(163,130214,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(164,130214,310.00,1,'None','View',1);
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(165,130215,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(166,130215,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(167,130215,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(168,130215,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(169,130215,310.00,1,'None','View',1);
+
+
+
+
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(210,230284,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(211,230284,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(212,230284,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(213,230284,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(214,230284,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(215,230285,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(216,230285,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(217,230285,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(218,230285,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(219,230285,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(220,230286,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(221,230286,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(222,230286,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(223,230286,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(224,230286,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(225,230287,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(226,230287,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(227,230287,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(228,230287,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(229,230287,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(230,230288,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(231,230288,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(232,230288,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(233,230288,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(234,230288,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(235,230289,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(236,230289,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(237,230289,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(238,230289,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(239,230289,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(240,230290,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(241,230290,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(242,230290,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(243,230290,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(244,230290,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(245,230291,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(246,230291,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(247,230291,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(248,230291,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(249,230291,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(250,230292,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(251,230292,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(252,230292,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(252,230292,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(254,230292,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(255,230293,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(256,230293,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(257,230293,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(258,230293,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(259,230293,310.00,1,'None','View',1);
+
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(260,230294,350.00,5,'None','Partial-View',5);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(261,230294,340.00,4,'None','View',4);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(262,230294,330.00,3,'None','Partial-View',3);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(263,230294,320.00,2,'None','None',2);
+INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
+(264,230294,310.00,1,'None','View',1);
 
 SELECT * FROM Room;
 
