@@ -18,13 +18,14 @@ public class ConnectionDB {
         /* Database connection settings, change dbName, dbusername, dbpassword */
         final String ipAddress = "127.0.0.1";
         final String dbServerPort = "5432";
-        final String dbName = "postgres";
         final String dbusername = "postgres";
-        final String dbpassword = "";
+        final String dbpassword = "admin";
+        final String dbName = "postgres";
+        final String dbSchema = "?currentSchema=ehotel"; // leave empty for default schema
         try {
             Class.forName("org.postgresql.Driver");
             con = DriverManager.getConnection("jdbc:postgresql://"
-                    + ipAddress + ":" + dbServerPort + "/" + dbName, dbusername, dbpassword);
+                    + ipAddress + ":" + dbServerPort + "/" + dbName + dbSchema, dbusername, dbpassword);
             return con;
         } catch (Exception e) {
             throw new Exception("Could not establish connection with the Database Server: "
@@ -40,12 +41,10 @@ public class ConnectionDB {
      */
     public void close() throws SQLException {
         try {
-            if (con != null)
-                con.close();
+            if (con != null) con.close();
         } catch (SQLException e) {
             throw new SQLException("Could not close connection with the Database Server: "
                     + e.getMessage());
         }
-
     }
 }
