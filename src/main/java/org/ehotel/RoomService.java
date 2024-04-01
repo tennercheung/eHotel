@@ -6,13 +6,15 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.ArrayList;
 
 @WebServlet("/get-rooms")
 public class RoomService extends HttpServlet {
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Gson gson = new Gson();
-        Hotel hotel = null;
-        String jsonString = gson.toJson(hotel);
+        ArrayList<Room> rooms = new ArrayList<>();
+        String jsonString = gson.toJson(rooms);
 
         PrintWriter out = response.getWriter();
         response.setContentType("application/json");
