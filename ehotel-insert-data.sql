@@ -110,6 +110,13 @@ INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 
 
 
+
+
+
+
+
+
+
 SELECT * FROM Hotel;
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
@@ -282,7 +289,6 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (434,430214,310.00,1,'None','View',1);
 
-
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (435,430215,350.00,5,'None','Partial-View',5);
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
@@ -423,10 +429,6 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 
 
 
-
-
-
-
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (110,130294,350.00,5,'None','Partial-View',5);
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
@@ -520,16 +522,6 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 (148,130211,320.00,2,'None','None',2);
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (149,130211,310.00,1,'None','View',1);
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -635,17 +627,544 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 SELECT * FROM Room;
 
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
-(310,230284,'Swimming Pool');
+(510,530210,'Swimming Pool');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
-(310,230284,'Gym');
+(510,530210,'Gym');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
-(310,230284,'WiFi');
+(510,530210,'WiFi');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
-(310,230284,'TV');
+(510,530210,'TV');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
-(310,230284,'Air Conditioning');
+(510,530210,'Air Conditioning');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
-(310,230284,'Mini-bar');
+(510,530210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(511,530210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(511,530210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(511,530210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(511,530210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(511,530210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(511,530210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(512,530210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(512,530210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(512,530210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(512,530210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(512,530210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(512,530210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(514,530210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(514,530210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(514,530210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(514,530210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(514,530210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(514,530210,'Mini-bar');
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(515,530211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(515,530211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(515,530211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(515,530211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(515,530211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(515,530211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(516,530211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(516,530211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(516,530211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(516,530211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(516,530211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(516,530211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(517,530211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(517,530211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(517,530211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(517,530211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(517,530211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(517,530211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(518,530211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(518,530211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(518,530211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(518,530211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(518,530211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(518,530211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(519,530211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(519,530211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(519,530211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(519,530211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(519,530211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(519,530211,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(520,530212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(520,530212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(520,530212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(520,530212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(520,530212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(520,530212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(521,530212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(521,530212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(521,530212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(521,530212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(521,530212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(521,530212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(522,530212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(522,530212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(522,530212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(522,530212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(522,530212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(522,530212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(523,530212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(523,530212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(523,530212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(523,530212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(523,530212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(523,530212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(524,530212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(524,530212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(524,530212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(524,530212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(524,530212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(524,530212,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(525,530213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(525,530213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(525,530213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(525,530213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(525,530213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(526,530213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(526,530213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(526,530213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(526,530213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(526,530213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(526,530213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(527,530213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(527,530213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(527,530213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(527,530213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(527,530213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(527,530213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(528,530213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(528,530213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(528,530213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(528,530213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(528,530213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(528,530213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(529,530213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(529,530213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(529,530213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(529,530213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(529,530213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(529,530213,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(530,530214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(530,530214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(530,530214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(530,530214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(530,530214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(530,530214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(531,530214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(531,530214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(531,530214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(531,530214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(531,530214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(513,530214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(532,530214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(532,530214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(532,530214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(532,530214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(532,530214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(532,530214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(533,530214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(533,530214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(533,530214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(533,530214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(533,530214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(533,530214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(534,530214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(534,530214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(534,530214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(534,530214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(534,530214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(534,530214,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(535,530215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(536,530215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(536,530215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(536,530215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(536,530215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(536,530215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(536,530215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(537,530215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(537,530215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(537,530215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(537,530215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(537,530215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(537,530215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(538,530215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(538,530215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(538,530215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(538,530215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(538,530215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(538,530215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(539,530215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(539,530215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(539,530215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(539,530215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(539,530215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(539,530215,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(540,530216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(540,530216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(540,530216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(540,530216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(540,530216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(540,530216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(541,530216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(541,530216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(541,530216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(541,530216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(541,530216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(541,530216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(542,530216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(542,530216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(542,530216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(542,530216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(542,530216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(542,530216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(543,530216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(543,530216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(543,530216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(543,530216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(543,530216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(543,530216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(544,530216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(544,530216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(544,530216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(544,530216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(544,530216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(544,530216,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(545,530217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(545,530217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(545,530217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(545,530217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(545,530217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(545,530217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(546,530217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(546,530217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(546,530217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(546,530217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(546,530217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(546,530217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(547,530217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(547,530217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(547,530217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(547,530217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(547,530217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(547,530217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(548,530217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(548,530217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(548,530217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(548,530217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(548,530217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(548,530217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(549,530217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(549,530217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(549,530217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(549,530217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(549,530217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(549,530217,'Mini-bar');
 
 
 
@@ -658,6 +1177,1634 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 
 
 
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(410,430210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(410,430210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(410,430210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(410,430210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(410,430210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(410,430210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(411,430210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(411,430210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(411,430210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(411,430210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(411,430210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(411,430210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(412,430210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(412,430210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(412,430210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(412,430210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(412,430210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(412,430210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(414,430210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(414,430210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(414,430210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(414,430210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(414,430210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(414,430210,'Mini-bar');
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(415,430211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(415,430211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(415,430211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(415,430211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(415,430211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(415,430211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(416,430211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(416,430211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(416,430211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(416,430211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(416,430211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(416,430211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(417,430211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(417,430211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(417,430211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(417,430211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(417,430211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(417,430211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(418,430211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(418,430211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(418,430211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(418,430211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(418,430211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(418,430211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(419,430211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(419,430211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(419,430211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(419,430211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(419,430211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(419,430211,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(420,430212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(420,430212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(420,430212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(420,430212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(420,430212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(420,430212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(421,430212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(421,430212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(421,430212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(421,430212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(421,430212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(421,430212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(422,430212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(422,430212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(422,430212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(422,430212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(422,430212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(422,430212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(423,430212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(423,430212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(423,430212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(423,430212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(423,430212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(423,430212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(424,430212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(424,430212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(424,430212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(424,430212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(424,430212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(424,430212,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(425,430213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(425,430213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(425,430213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(425,430213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(425,430213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(426,430213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(426,430213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(426,430213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(426,430213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(426,430213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(426,430213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(427,430213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(427,430213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(427,430213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(427,430213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(427,430213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(427,430213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(428,430213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(428,430213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(428,430213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(428,430213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(428,430213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(428,430213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(429,430213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(429,430213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(429,430213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(429,430213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(429,430213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(429,430213,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(430,430214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(430,430214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(430,430214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(430,430214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(430,430214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(430,430214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(431,430214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(431,430214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(431,430214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(431,430214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(431,430214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(413,430214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(432,430214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(432,430214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(432,430214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(432,430214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(432,430214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(432,430214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(433,430214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(433,430214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(433,430214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(433,430214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(433,430214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(433,430214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(434,430214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(434,430214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(434,430214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(434,430214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(434,430214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(434,430214,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(435,430215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(436,430215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(436,430215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(436,430215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(436,430215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(436,430215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(436,430215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(437,430215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(437,430215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(437,430215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(437,430215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(437,430215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(437,430215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(438,430215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(438,430215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(438,430215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(438,430215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(438,430215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(438,430215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(439,430215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(439,430215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(439,430215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(439,430215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(439,430215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(439,430215,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(440,430216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(440,430216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(440,430216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(440,430216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(440,430216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(440,430216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(441,430216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(441,530216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(441,530216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(441,430216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(441,430216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(441,430216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(442,430216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(442,430216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(442,430216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(442,430216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(442,430216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(442,430216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(443,430216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(443,430216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(443,430216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(443,430216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(443,430216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(443,430216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(444,430216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(444,430216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(444,430216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(444,430216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(444,430216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(444,430216,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(445,430217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(445,430217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(445,430217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(445,430217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(445,430217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(445,430217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(446,430217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(446,430217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(446,430217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(446,430217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(446,430217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(446,430217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(447,430217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(447,430217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(447,430217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(447,430217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(447,430217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(447,430217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(448,430217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(448,430217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(448,430217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(448,430217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(448,430217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(448,430217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(449,430217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(449,430217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(449,430217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(449,430217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(449,430217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(449,430217,'Mini-bar');
+
+
+
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(310,330210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(310,330210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(310,330210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(310,330210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(310,330210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(310,330210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(311,330210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(311,330210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(311,330210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(311,330210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(311,330210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(311,330210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(312,330210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(312,330210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(312,330210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(312,330210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(312,330210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(312,330210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(314,330210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(314,330210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(314,330210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(314,330210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(314,330210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(314,330210,'Mini-bar');
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(315,330211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(315,330211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(315,330211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(315,330211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(315,330211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(315,330211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(316,330211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(316,330211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(316,330211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(316,330211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(316,330211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(316,330211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(317,330211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(317,330211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(317,330211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(317,330211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(317,330211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(317,330211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(318,330211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(318,330211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(318,330211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(318,330211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(318,330211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(318,330211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(319,330211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(319,330211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(319,330211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(319,330211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(319,330211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(319,330211,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(320,330212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(320,330212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(320,330212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(320,330212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(320,330212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(320,330212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(321,330212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(321,330212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(321,330212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(321,330212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(321,330212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(321,330212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(322,330212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(322,330212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(322,330212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(322,330212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(322,330212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(322,330212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(323,330212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(323,330212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(323,330212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(323,330212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(323,330212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(323,330212,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(324,330212,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(324,330212,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(324,330212,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(324,330212,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(324,330212,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(324,330212,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(325,330213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(325,330213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(325,330213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(325,330213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(325,330213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(325,330213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(326,330213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(326,330213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(326,330213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(326,330213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(326,330213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(326,330213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(327,330213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(327,330213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(327,330213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(327,330213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(327,330213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(327,330213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(328,330213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(328,330213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(328,330213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(328,330213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(328,330213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(328,330213,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(329,330213,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(329,330213,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(329,330213,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(329,330213,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(329,330213,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(329,330213,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(330,330214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(330,330214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(330,330214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(330,330214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(330,330214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(330,330214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(331,330214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(331,330214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(331,330214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(331,330214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(331,330214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(313,330214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(332,330214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(332,330214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(332,330214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(332,330214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(332,330214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(332,330214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(333,330214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(333,330214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(333,330214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(333,330214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(333,330214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(333,330214,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(334,330214,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(334,330214,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(334,330214,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(334,330214,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(334,330214,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(334,330214,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(335,330215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(335,330215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(335,330215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(335,330215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(335,330215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(335,330215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(336,330215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(336,330215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(336,330215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(336,330215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(336,330215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(336,330215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(337,330215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(337,330215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(337,330215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(337,330215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(337,330215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(337,330215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(338,330215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(338,330215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(338,330215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(338,330215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(338,330215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(338,330215,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(339,430215,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(339,330215,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(339,330215,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(339,330215,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(339,330215,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(339,330215,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(340,330216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(340,330216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(340,330216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(340,330216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(340,330216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(340,330216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(341,330216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(341,330216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(341,330216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(341,330216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(341,330216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(341,330216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(342,330216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(342,330216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(342,330216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(342,330216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(342,330216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(342,330216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(343,330216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(343,330216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(343,330216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(343,330216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(343,330216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(343,330216,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(344,330216,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(344,330216,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(344,330216,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(344,330216,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(344,330216,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(344,330216,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(345,330217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(345,330217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(345,330217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(345,330217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(345,330217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(345,330217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(346,330217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(346,330217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(346,330217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(346,330217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(346,330217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(346,330217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(347,330217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(347,330217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(347,330217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(347,330217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(347,330217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(347,330217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(348,330217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(348,330217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(348,330217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(348,330217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(348,330217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(348,330217,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(349,330217,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(349,330217,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(349,330217,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(349,330217,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(349,330217,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(349,330217,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(110,130294,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(110,130294,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(110,130294,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(110,130294,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(110,130294,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(110,130294,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(111,130294,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(111,130294,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(111,130294,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(111,130294,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(111,130294,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(111,130294,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(112,130294,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(112,130294,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(112,130294,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(112,130294,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(112,130294,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(112,130294,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130294,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130294,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130294,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130294,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130294,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130294,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(114,130294,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(114,130294,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(114,130294,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(114,130294,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(114,130294,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(114,130294,'Mini-bar');
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(115,130295,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(115,130295,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(115,130295,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(115,130295,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(115,130295,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(115,130295,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(116,130295,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(116,130295,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(116,130295,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(116,130295,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(116,130295,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(116,130295,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(117,130295,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(117,130295,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(117,130295,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(117,130295,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(117,130295,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(117,130295,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(118,130295,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(118,130295,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(118,130295,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(118,130295,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(118,130295,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(118,130295,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(119,130295,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(119,130295,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(119,130295,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(119,130295,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(119,130295,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(119,130295,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(120,130296,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(120,130296,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(120,130296,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(120,130296,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(120,130296,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(120,130296,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(121,130296,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(121,130296,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(121,130296,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(121,130296,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(121,130296,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(121,130296,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(122,130296,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(122,130296,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(122,130296,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(122,130296,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(122,130296,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(122,130296,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(123,130296,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(123,130296,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(123,130296,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(123,130296,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(123,130296,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(123,130296,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(124,130296,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(124,130296,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(124,130296,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(124,130296,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(124,130296,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(124,130296,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(125,130297,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(125,130297,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(125,130297,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(125,130297,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(125,130297,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(125,130297,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(126,130297,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(126,130297,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(126,130297,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(126,130297,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(126,130297,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(126,130297,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(127,130297,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(127,130297,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(127,130297,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(127,130297,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(127,130297,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(127,130297,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(128,130297,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(128,130297,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(128,130297,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(128,130297,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(128,130297,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(128,130297,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(129,130297,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(129,130297,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(129,130297,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(129,130297,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(129,130297,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(129,130297,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(130,130298,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(130,130298,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(130,130298,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(130,130298,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(130,130298,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(130,130298,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(131,130298,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(131,130298,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(131,130298,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(131,130298,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(131,130298,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(113,130298,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(132,130298,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(132,130298,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(132,130298,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(132,130298,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(132,130298,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(132,130298,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(133,130298,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(133,130298,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(133,130298,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(133,130298,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(133,130298,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(133,130298,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(134,130298,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(134,130298,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(134,130298,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(134,130298,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(134,130298,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(134,130298,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(135,130299,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(135,130299,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(135,130299'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(135,130299,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(135,130299,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(135,130299,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(136,130299,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(136,130299,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(136,130299,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(136,130299,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(136,130299,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(136,130299,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(137,130299,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(137,130299,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(137,130299,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(137,130299,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(137,130299,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(137,130299,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(138,130299,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(138,130299,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(138,130299,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(138,130299,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(138,130299,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(138,130299,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(139,130299,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(139,130299,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(139,130299,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(139,130299,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(139,130299,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(139,130299,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(140,130210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(140,130210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(140,130210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(140,130210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(140,130210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(140,130210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(141,130210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(141,130210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(141,130210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(141,130210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(141,130210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(141,130210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(142,130210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(142,130210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(142,130210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(142,130210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(142,130210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(142,130210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(143,130210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(143,130210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(143,130210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(143,130210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(143,130210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(143,130210,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(144,130210,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(144,130210,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(144,130210,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(144,130210,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(144,130210,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(144,130210,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(145,130211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(145,130211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(145,130211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(145,130211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(145,130211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(145,130211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(146,130211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(146,130211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(146,130211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(146,130211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(146,130211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(146,130211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(147,130211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(147,130211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(147,130211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(147,130211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(147,130211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(147,130211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(148,130211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(148,130211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(148,130211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(148,130211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(148,130211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(148,130211,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(149,130211,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(149,130211,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(149,130211,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(149,130211,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(149,130211,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(149,130211,'Mini-bar');
 
 
 
@@ -666,6 +2813,547 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 
 
 
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(210,230284,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(210,230284,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(210,230284,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(210,230284,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(210,230284,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(210,230284,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(211,230284,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(211,230284,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(211,230284,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(211,230284,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(211,230284,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(211,230284,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(212,230284,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(212,230284,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(212,230284,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(212,230284,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(212,230284,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(212,230284,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230284,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230284,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230284,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230284,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230284,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230284,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(214,230284,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(214,230284,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(214,230284,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(214,230284,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(214,230284,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(214,230284,'Mini-bar');
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(215,230285,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(215,230285,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(215,230285,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(215,230285,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(215,230285,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(215,230285,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(216,230285,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(216,230285,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(216,230285,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(216,230285,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(216,230285,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(216,230285,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(217,230285,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(217,230285,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(217,230285,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(217,230285,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(217,230285,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(217,230285,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(218,230285,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(218,230285,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(218,230285,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(218,230285,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(218,230285,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(218,230285,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(219,230285,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(219,230285,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(219,230285,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(219,230285,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(219,230285,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(219,230285,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(220,230286,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(220,230286,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(220,230286,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(220,230286,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(220,230286,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(220,230286,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(221,230286,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(221,230286,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(221,230286,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(221,230286,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(221,230286,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(221,230286,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(222,230286,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(222,230286,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(222,230286,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(222,230286,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(222,230286,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(222,230286,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(223,230286,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(223,230286,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(223,230286,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(223,230286,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(223,230286,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(223,230286,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(224,230286,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(224,230286,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(224,230286,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(224,230286,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(224,230286,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(224,230286,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(225,230287,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(225,230287,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(225,230287,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(225,230287,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(225,230287,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230287,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(226,230287,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(226,230287,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(226,230287,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(226,230287,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(226,230287,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(226,230287,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(227,230287,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(227,230287,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(227,230287,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(227,230287,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(227,230287,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(227,230287,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(228,230287,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(228,230287,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(228,230287,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(228,230287,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(228,230287,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(228,230287,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(229,230287,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(229,230287,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(229,230287,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(229,230287,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(229,230287,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(229,230287,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(230,230288,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(230,230288,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(230,230288,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(230,230288,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(230,230288,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(230,230288,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(231,230288,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(231,230288,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(231,230288,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(231,230288,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(231,230288,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(213,230288,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(232,230288,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(232,230288,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(232,230288,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(232,230288,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(232,230288,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(232,230288,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(233,230288,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(233,230288,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(233,230288,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(233,230288,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(233,230288,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(233,230288,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(234,230288,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(234,230288,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(234,230288,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(234,230288,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(234,230288,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(234,230288,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230289,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230289,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230289,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230289,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230289,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(235,230289,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(236,230289,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(236,230289,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(236,230289,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(236,230289,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(236,230289,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(236,230289,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(237,230289,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(237,230289,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(237,230289,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(237,230289,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(237,230289,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(237,230289,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(238,230289,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(238,230289,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(238,230289,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(238,230289,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(238,230289,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(238,230289,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(239,230289,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(239,230289,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(239,230289,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(239,230289,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(239,230289,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(239,230289,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(240,230290,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(240,230290,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(240,230290,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(240,230290,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(240,230290,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(240,230290,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(241,230290,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(241,230290,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(241,230290,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(241,230290,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(241,230290,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(241,230290,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(242,230290,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(242,230290,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(242,230290,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(242,230290,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(242,230290,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(242,230290,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(243,230290,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(243,230290,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(243,230290,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(243,230290,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(243,230290,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(243,230290,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(244,230290,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(244,230290,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(244,230290,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(244,230290,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(244,230290,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(244,230290,'Mini-bar');
+
+
+
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(245,230291,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(245,230291,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(245,230291,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(245,230291,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(245,230291,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(245,230291,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(246,230291,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(246,230291,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(246,230291,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(246,230291,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(246,230291,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(246,230291,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(247,230291,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(247,230291,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(247,230291,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(247,230291,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(247,230291,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(247,230291,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(248,230291,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(248,230291,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(248,230291,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(248,230291,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(248,230291,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(248,230291,'Mini-bar');
+
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(249,230291,'Swimming Pool');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(249,230291,'Gym');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(249,230291,'WiFi');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(249,230291,'TV');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(249,230291,'Air Conditioning');
+INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
+(249,230291,'Mini-bar');
 
 
 
