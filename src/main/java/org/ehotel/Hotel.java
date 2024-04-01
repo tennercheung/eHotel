@@ -26,7 +26,7 @@ public class Hotel {
         return "<ul>"
                 + "<li>name=Hotel " + id + "</li>"
                 + "<li>chain=Chain " + chainId + "</li>"
-                + "<li>rating= " + category + "</li>"
+                + "<li>category= " + category + "</li>"
                 + "<li>phoneNum= " + phoneNum + "</li>"
                 + "<li>numRooms= " + numRooms + "</li>"
                 + "<li>address= " + address + "</li>"
