@@ -1,6 +1,5 @@
 SET search_path = "ehotel";
 
-
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
 (1202,1234567890,'info@hilton.com','123 Main St, Cityville, NY 12345',12);
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
@@ -11,6 +10,12 @@ INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALU
 (7524,6139302583,'info@deltahotels.com','55 Sunny Trail, San Francisco, CA 02331',9);
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
 (2049,4129329048,'info@marriotthotels.com','3294 Main St, South County, OH 76205',10);
+
+
+
+
+
+
 
 SELECT * FROM HotelChain;
 
@@ -103,6 +108,7 @@ INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 (530216,2049,'info@marriotthotels-SouthCounty6-az.com',5648204944,5,'105 County Rd, SouthCounty, AZ 52049',3);
 INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 (530217,2049,'info@marriotthotels-SouthCounty7-az.com',5748204944,5,'106 County Rd, SouthCounty, AZ 52049',3);
+
 
 
 
@@ -220,16 +226,6 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 
 
 
-
-
-
-
-
-
-
-
-
-
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (410,430210,350.00,5,'None','Partial-View',5);
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
@@ -322,13 +318,6 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 (448,430217,320.00,2,'None','None',2);
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (449,430217,310.00,1,'None','View',1);
-
-
-
-
-
-
-
 
 
 
@@ -614,6 +603,13 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 (248,230291,320.00,2,'None','None',2);
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
 (249,230291,310.00,1,'None','View',1);
+
+
+
+
+
+
+
 
 
 
