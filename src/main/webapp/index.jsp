@@ -1,4 +1,3 @@
-
 <%@ page import="org.ehotel.HotelChain" %>
 <%@ page import="org.ehotel.HotelService" %>
 <%@ page import="java.util.ArrayList" %>
@@ -11,7 +10,6 @@
         e.printStackTrace();
     }
 %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +22,6 @@
         body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif}
     </style>
 </head>
-
 <body class="w3-light-grey">
     <jsp:include page="navbar.jsp"/>
     <header class="w3-display-container w3-content" style="max-width:1500px;">
@@ -37,7 +34,7 @@
                     <h2><i class="fa fa-bed w3-margin-right"></i>Hotel Search</h2>
                 </div>
                 <div class="w3-container w3-white w3-padding-16">
-                    <form method="POST" action="get-rooms-controller.jsp" id="hotelsearch">
+                    <form method="POST" action="get-rooms" id="hotelsearch">
                         <div class="w3-row-padding" style="margin:0 -16px;">
                             <div class="w3-half w3-margin-bottom">
                                 <label><i class="fa fa-calendar"></i> Start Date</label>
@@ -104,6 +101,5 @@
             </div>
         <% } %>
     </header>
-
 </body>
 </html>

@@ -1,16 +1,11 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title> e-Hotels - 404 page </title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body padding=0 margin=0>
     <div id="notfound">
         <div class="notfound">
@@ -23,5 +18,4 @@
         </div>
     </div>
 </body>
-
 </html>
