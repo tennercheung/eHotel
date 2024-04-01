@@ -72,7 +72,7 @@
                                     <label style="margin:8px"> <input type="radio" name="category" value="2" required/> 2 </label>
                                     <label style="margin:8px"> <input type="radio" name="category" value="3" required/> 3 </label>
                                     <label style="margin:8px"> <input type="radio" name="category" value="4" required/> 4 </label>
-                                    <label style="margin:8px"> <input type="radio" name="category" value="5" required/> 5 </label>
+                                    <label style="margin:8px"> <input type="radio" name="category" value="5" checked required/> 5 </label>
                                 </div>
                             </div>
                         </div>

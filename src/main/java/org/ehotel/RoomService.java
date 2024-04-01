@@ -10,14 +10,10 @@ import java.io.*;
 @WebServlet("/get-rooms")
 public class RoomService extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-
         Gson gson = new Gson();
-
         Hotel hotel = null;
-
         String jsonString = gson.toJson(hotel);
+
         PrintWriter out = response.getWriter();
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
