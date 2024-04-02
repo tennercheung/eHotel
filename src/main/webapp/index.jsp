@@ -26,7 +26,7 @@
 <body class="w3-light-grey">
     <jsp:include page="navbar.jsp"/>
     <header class="w3-display-container w3-content" style="max-width:1500px;">
-        <img class="w3-image" src="assets/banner.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+        <img class="w3-image" src="assets/banner.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800" ondragstart="return false;">
         <% if (chains.size() == 0) { %>
             <h1>Our service is unavailable. Sorry for the inconvenience</h1>
         <% } else { %>

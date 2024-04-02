@@ -1,37 +1,36 @@
 package org.ehotel;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
-public class ConnectionDB {
-    private Connection con = null;
+public class ConnectionDB implements AutoCloseable {
+    private final Connection con;
+    private final PreparedStatement stmt;
+    private final ResultSet rs;
 
-    /**
-     * Establishes a connection with the database, initializes and returns
-     * the Connection object.
-     *
-     * @return Connection, the Connection object
-     * @throws Exception if an error occurs when connecting to the database
-     */
-    public Connection getConnection() throws Exception {
-        /* Database connection settings, change dbName, dbusername, dbpassword */
+    public ConnectionDB(String sql) throws Exception {
+        /* Database connection settings, change dbUsername, dbPassword, dbName, dbSchema */
         final String ipAddress = "127.0.0.1";
         final String dbServerPort = "5432";
-        final String dbusername = "postgres";
-        final String dbpassword = "admin";
+        final String dbUsername = "postgres";
+        final String dbPassword = "admin";
         final String dbName = "postgres";
         final String dbSchema = "?currentSchema=ehotel"; // leave empty for default schema
+
+        // Initialize connection to database and get query results
         try {
             Class.forName("org.postgresql.Driver");
             con = DriverManager.getConnection("jdbc:postgresql://"
-                    + ipAddress + ":" + dbServerPort + "/" + dbName + dbSchema, dbusername, dbpassword);
-            return con;
+                    + ipAddress + ":" + dbServerPort + "/" + dbName + dbSchema, dbUsername, dbPassword);
+            stmt = con.prepareStatement(sql);
+            rs = stmt.executeQuery();
         } catch (Exception e) {
-            throw new Exception("Could not establish connection with the Database Server: "
+            try { close(); } catch (Exception ignored) {}
+            throw new Exception("Could not connect or execute query to the Database Server: "
                     + e.getMessage());
         }
     }
+
+    public ResultSet getResultSet() { return rs; }
 
     /**
      * Close database connection. It is very important to close the database connection
@@ -40,11 +39,13 @@ public class ConnectionDB {
      * @throws SQLException if it fails to close the connection
      */
     public void close() throws SQLException {
-        try {
-            if (con != null) con.close();
-        } catch (SQLException e) {
-            throw new SQLException("Could not close connection with the Database Server: "
-                    + e.getMessage());
+        SQLException error = null;
+        try { if (rs != null) rs.close(); } catch (SQLException e) { error = e; }
+        try { if (stmt != null) stmt.close(); } catch (SQLException e) { error = e; }
+        try { if (con != null) con.close(); } catch (SQLException e) { error = e; }
+        if (error != null) {
+            throw new SQLException("Could not successfully close connection with the Database Server: "
+                    + error.getMessage());
         }
     }
 }
