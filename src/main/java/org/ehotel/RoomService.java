@@ -1,6 +1,7 @@
 package org.ehotel;
 
 import com.google.gson.Gson;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 
 @WebServlet("/get-rooms")
 public class RoomService extends HttpServlet {
+    private static final long serialVersionUID = 1L;
     public static ArrayList<Room> getRooms() throws Exception {
         String sql = "SELECT * FROM Room";
         ArrayList<Room> rooms = new ArrayList<>();
@@ -31,15 +33,16 @@ public class RoomService extends HttpServlet {
         }
     }
     @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Gson gson = new Gson();
-        ArrayList<Room> rooms = new ArrayList<>();
+        ArrayList<Room> rooms;
+        try { rooms = getRooms(); } catch (Exception e) { throw new ServletException(e); }
         String jsonString = gson.toJson(rooms);
 
-        PrintWriter out = response.getWriter();
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
         out.print(jsonString);
-        out.flush();
+        out.close();
     }
 }
