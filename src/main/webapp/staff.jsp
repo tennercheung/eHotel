@@ -1,3 +1,13 @@
+<%@ page import="org.ehotel.Employee" %>
+<%@ page import="org.ehotel.EmployeeService" %>
+<%
+    Employee employee = null; // SIN is the only login credential
+    Integer sin = null;
+    try { sin = (Integer) session.getAttribute("sin"); } catch (Exception ignored) {}
+    try { employee = (Employee) EmployeeService.getEmployee(sin); } catch (Exception e) { e.printStackTrace(); }
+    if (employee == null) response.sendRedirect("staff-login.jsp");
+    else {
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +19,15 @@
     <link rel="icon" href="<%=request.getContextPath()%>/favicon.ico" type="image/x-icon" />
     <style> body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif} </style>
 </head>
-
 <body class="w3-light-grey">
     <jsp:include page="navbar.jsp"/>
+    <div class="w3-bar w3-light-gray w3-large">
+        <a class="w3-bar-item w3-light-gray w3-mobile">Welcome, <%=employee.getName()%>!</a>
+        <a href="staff-logout.jsp" class="w3-bar-item w3-button w3-right w3-light-blue w3-mobile">
+            Logout <i class="fa fa-sign-out w3-margin-right"></i>
+        </a>
+    </div>
 
 </body>
 </html>
+<% } %>
