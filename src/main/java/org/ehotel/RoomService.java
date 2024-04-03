@@ -19,12 +19,12 @@ public class RoomService extends HttpServlet {
             // iterate through the result set
             while (rs.next()) {
                 rooms.add(new Room(
-                        rs.getInt("RoomNum"),
-                        rs.getDouble("Price"),
-                        rs.getBoolean("Extendability"),
-                        rs.getString("Problem"),
-                        rs.getString("RoomView"),
-                        rs.getInt("Capacity")
+                    rs.getInt("RoomNum"),
+                    rs.getDouble("Price"),
+                    rs.getBoolean("Extendability"),
+                    rs.getString("Problem"),
+                    rs.getString("RoomView"),
+                    rs.getInt("Capacity")
                 ));
             }
             return rooms;

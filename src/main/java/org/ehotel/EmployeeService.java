@@ -24,10 +24,10 @@ public class EmployeeService extends HttpServlet {
             ResultSet rs = con.getResultSet();
             if (rs.next()) {
                 return new Employee(
-                        rs.getInt("EmployeeSIN"),
-                        rs.getString("PositionName"),
-                        rs.getString("FullName"),
-                        rs.getString("Addr")
+                    rs.getInt("EmployeeSIN"),
+                    rs.getString("PositionName"),
+                    rs.getString("FullName"),
+                    rs.getString("Addr")
                 );
             }
             return null;
