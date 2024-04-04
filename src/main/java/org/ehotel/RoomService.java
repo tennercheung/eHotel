@@ -21,12 +21,13 @@ public class RoomService extends HttpServlet {
             // iterate through the result set
             while (rs.next()) {
                 rooms.add(new Room(
+                    rs.getInt("HotelID"),
                     rs.getInt("RoomNum"),
                     rs.getDouble("Price"),
                     rs.getBoolean("Extendability"),
-                    rs.getString("Problem"),
+                    rs.getBoolean("Problem"),
                     rs.getString("RoomView"),
-                    rs.getInt("Capacity")
+                    rs.getString("Capacity")
                 ));
             }
             return rooms;
@@ -35,8 +36,11 @@ public class RoomService extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Gson gson = new Gson();
-        ArrayList<Room> rooms;
-        try { rooms = getRooms(); } catch (Exception e) { throw new ServletException(e); }
+        // ArrayList<Room> rooms;
+        // try { rooms = getRooms(); } catch (Exception e) { throw new ServletException(e); }
+        ArrayList<Room> rooms = new ArrayList<>();
+        rooms.add(new Room(1,1, 49.99, true, false, "Sea", "Single"));
+        rooms.add(new Room(1,32, 32.49, false, true, "Mountain", "Double"));
         String jsonString = gson.toJson(rooms);
 
         response.setContentType("application/json");
