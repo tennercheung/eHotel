@@ -1,5 +1,5 @@
 SET search_path = "ehotel";
-DROP TABLE IF EXISTS HotelChain, Hotel, Room, RoomAmenities, Employee, Renting, Manager, Customer, Booking, Payments, Archives;
+DROP TABLE IF EXISTS HotelChain, Hotel, Room, RoomAmenities, Employee, Renting, Manager, Customer, Booking, Payments, Archives CASCADE;
 
 CREATE TABLE HotelChain (
 	ChainID SERIAL UNIQUE,
@@ -48,7 +48,7 @@ CREATE TABLE Room (
 	Extendability BOOLEAN, -- if a bed can be added to the room
 	Problem BOOLEAN, -- if there are damages/problems
 	RoomView VARCHAR (20) CHECK (RoomView IN ('Sea View', 'Mountain View')),
-	Capacity VARCHAR (20) CHECK (Capacity IN ('Single Bed','Double Bed','Queen Bed','King Bed')),
+	Capacity INTEGER CHECK (Capacity IN (1,2,3,4)),
 	PRIMARY KEY(RoomNum,HotelID),
 	FOREIGN KEY(HotelID) REFERENCES Hotel
 );
@@ -109,6 +109,7 @@ CREATE TABLE Payments (
 );
 
 CREATE TABLE Archives (
+	ArchiveID SERIAL UNIQUE,
     BookingID SERIAL,-- null if it's a renting
     HotelID SERIAL,
     RoomNum INTEGER,
@@ -117,18 +118,84 @@ CREATE TABLE Archives (
     CheckOutDate DATE,
     RentingID SERIAL, -- null if it's a booking
     RentingDate DATE, -- null if it's a booking
-    EmployeeSIN SERIAL
+	CustomerID SERIAL, -- null if it's a renting
+    EmployeeSIN SERIAL,
+	PRIMARY KEY(ArchiveID)
 );
 
--- CREATE TABLE BookingToRental(
--- 	EmployeeSIN SERIAL,
--- 	BookingID SERIAL,
--- 	RentalID SERIAL
--- 	HotelID SERIAL, -- these two rows were added to adhere to Booking pkey
--- 	RoomNum INTEGER,
--- 	PRIMARY KEY(EmployeeSIN,BookingID),
--- 	FOREIGN KEY(EmployeeSIN) REFERENCES Employee,
--- 	FOREIGN KEY(BookingID,HotelID,RoomNum) REFERENCES Booking(BookingID,HotelID,RoomNum)
--- );
 
 
+
+/************************/
+/*  QUERIES  */
+/************************/
+
+-- return hotels given an area
+SELECT * FROM Hotel WHERE Area = 'New York City';
+
+-- return rooms with amenitites based on the room price
+SELECT Room.*, RoomAmenities.Amenities
+FROM Room
+JOIN RoomAmenities ON Room.Price = RoomAmenities.Price;
+
+-- return paymentID given a RentingID
+SELECT PaymentID FROM Renting WHERE RentingID = 20220;
+
+-- return all customers for a hotel
+SELECT DISTINCT c.*
+FROM Customer c
+JOIN (
+    SELECT CustomerID, HotelID
+    FROM Booking
+    WHERE HotelID = 230284
+    UNION
+    SELECT CustomerID, HotelID
+    FROM Renting
+    WHERE HotelID = 230284
+) AS cr ON c.CustomerID = cr.CustomerID;
+
+-- return total num bookings for a hotel
+SELECT HotelID, COUNT(*) AS TotalBookings FROM Booking WHERE HotelID = 230284 GROUP BY HotelID;
+-- return total num rentings for a hotel
+SELECT HotelID, COUNT(*) AS TotalRentings FROM Renting WHERE HotelID = 230284 GROUP BY HotelID;
+
+
+/************************/
+/*  VIEWS  */
+/************************/
+
+--View 1
+DROP VIEW IF EXISTS AvailableRooms;
+CREATE VIEW AvailableRooms AS
+SELECT r.*
+FROM Room r
+JOIN Hotel h ON r.HotelID = h.HotelID
+LEFT JOIN Booking b ON r.RoomNum = b.RoomNum AND r.HotelID = b.HotelID
+LEFT JOIN Renting rn ON r.RoomNum = rn.RoomNum AND r.HotelID = rn.HotelID
+WHERE h.Area = 'Newberry' 
+AND (
+    -- Check if the room is not booked for Jan 1, 2024 to Jan 2, 2024
+    (b.RoomNum IS NULL OR ('2024-01-01' < b.CheckInDate AND '2024-01-02' > b.CheckOutDate))
+    AND
+    -- Check if the room is not rented for Jan 1, 2024 to Jan 2, 2024
+    (rn.RoomNum IS NULL OR ('2024-01-01' < rn.CheckInDate AND '2024-01-02' > rn.CheckOutDate))
+    AND
+    -- Check if the room is available for Dec 31, 2023 to Jan 1, 2024
+    (b.RoomNum IS NULL OR ('2023-12-31' < b.CheckInDate OR '2024-01-01' >= b.CheckOutDate))
+    AND
+    -- Check if the room is available for Jan 2, 2024 to Jan 3, 2024
+    (rn.RoomNum IS NULL OR ('2024-01-02' < rn.CheckInDate OR '2024-01-03' >= rn.CheckOutDate))
+);
+
+SELECT * FROM AvailableRooms;
+
+
+
+--View 2
+DROP VIEW IF EXISTS HotelCapacity;
+CREATE VIEW HotelCapacity AS
+SELECT *, SUM(Capacity) OVER () AS TotalCapacity
+FROM Room
+WHERE HotelID=230284;
+
+SELECT TotalCapacity FROM HotelCapacity;
