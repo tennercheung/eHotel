@@ -19,95 +19,95 @@ INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALU
 
 SELECT * FROM HotelChain;
 
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230284,3104,'info@haptoninn-newberry-az.com',2048204944,5,'61 County Rd, Newberry, AZ 22049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230285,3104,'info@haptoninn-newberry2-az.com',2148204944,5,'62 County Rd, Newberry, AZ 22049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230286,3104,'info@haptoninn-newberry3-az.com',2248204944,5,'63 County Rd, Newberry, AZ 22049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230287,3104,'info@haptoninn-newberry4-az.com',2348204944,5,'64 County Rd, Newberry, AZ 22049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230288,3104,'info@haptoninn-newberry5-az.com',2448204944,5,'65 County Rd, Newberry, AZ 22049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230289,3104,'info@haptoninn-newberry6-az.com',2548204944,5,'66 County Rd, Newberry, AZ 22049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230290,3104,'info@haptoninn-newberry7-az.com',2648204944,5,'67 County Rd, Newberry, AZ 22049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(230291,3104,'info@haptoninn-newberry8-az.com',2748204944,5,'68 County Rd, Newberry, AZ 22049',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230284,3104,'info@haptoninn-newberry-az.com',2048204944,5,'61 County Rd, Newberry, AZ 22049','Newberry',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230285,3104,'info@haptoninn-newberry2-az.com',2148204944,5,'62 County Rd, Newberry, AZ 22049','Newberry',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230286,3104,'info@haptoninn-newberry3-az.com',2248204944,5,'63 County Rd, Newberry, AZ 22049','Newberry',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230287,3104,'info@haptoninn-newberry4-az.com',2348204944,5,'64 County Rd, Newberry, AZ 22049','Newberry',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230288,3104,'info@haptoninn-newberry5-az.com',2448204944,5,'65 County Rd, Newberry, AZ 22049','Newberry',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230289,3104,'info@haptoninn-newberry6-az.com',2548204944,5,'66 County Rd, Newberry, AZ 22049','Newberry',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230290,3104,'info@haptoninn-newberry7-az.com',2648204944,5,'67 County Rd, Newberry, AZ 22049','Newberry',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(230291,3104,'info@haptoninn-newberry8-az.com',2748204944,5,'68 County Rd, Newberry, AZ 22049','Newberry',3);
 
 
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130294,1202,'info@hilton-Cityville0-az.com',1048204944,5,'71 County Rd, Cityville, AZ 12049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130295,1202,'info@hilton-Cityville1-az.com',1148204944,5,'72 County Rd, Cityville, AZ 12049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130296,1202,'info@hilton-Cityville2-az.com',1248204944,5,'73 County Rd, Cityville, AZ 12049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130297,1202,'info@hilton-Cityville3-az.com',1348204944,5,'74 County Rd, Cityville, AZ 12049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130298,1202,'info@hilton-Cityville4-az.com',1448204944,5,'75 County Rd, Cityville, AZ 12049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130299,1202,'info@hilton-Cityville5-az.com',1548204944,5,'76 County Rd, Cityville, AZ 12049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130210,1202,'info@hilton-Cityville6-az.com',1648204944,5,'77 County Rd, Cityville, AZ 12049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(130211,1202,'info@hilton-Cityville7-az.com',1748204944,5,'78 County Rd, Cityville, AZ 12049',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130294,1202,'info@hilton-Cityville0-az.com',1048204944,5,'71 County Rd, Cityville, AZ 12049','Cityville',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130295,1202,'info@hilton-Cityville1-az.com',1148204944,5,'72 County Rd, Cityville, AZ 12049','Cityville',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130296,1202,'info@hilton-Cityville2-az.com',1248204944,5,'73 County Rd, Cityville, AZ 12049','Cityville',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130297,1202,'info@hilton-Cityville3-az.com',1348204944,5,'74 County Rd, Cityville, AZ 12049','Cityville',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130298,1202,'info@hilton-Cityville4-az.com',1448204944,5,'75 County Rd, Cityville, AZ 12049','Cityville',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130299,1202,'info@hilton-Cityville5-az.com',1548204944,5,'76 County Rd, Cityville, AZ 12049','Cityville',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130210,1202,'info@hilton-Cityville6-az.com',1648204944,5,'77 County Rd, Cityville, AZ 12049','Cityville',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(130211,1202,'info@hilton-Cityville7-az.com',1748204944,5,'78 County Rd, Cityville, AZ 12049','Cityville',3);
 
 
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330210,9193,'info@sheratonhotels-NewYork0-az.com',3048204944,5,'83 County Rd, NewYork, AZ 32049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330211,9193,'info@sheratonhotels-NewYork1-az.com',3148204944,5,'84 County Rd, NewYork, AZ 32049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330212,9193,'info@sheratonhotels-NewYork2-az.com',3248204944,5,'85 County Rd, NewYork, AZ 32049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330213,9193,'info@sheratonhotels-NewYork3-az.com',3348204944,5,'86 County Rd, NewYork, AZ 32049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330214,9193,'info@sheratonhotels-NewYork4-az.com',3448204944,5,'87 County Rd, NewYork, AZ 32049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330215,9193,'info@sheratonhotels-NewYork5-az.com',3548204944,5,'88 County Rd, NewYork, AZ 32049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330216,9193,'info@sheratonhotels-NewYork6-az.com',3648204944,5,'89 County Rd, NewYork, AZ 32049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(330217,9193,'info@sheratonhotels-NewYork7-az.com',3748204944,5,'90 County Rd, NewYork, AZ 32049',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330210,9193,'info@sheratonhotels-NewYork0-az.com',3048204944,5,'83 County Rd, NewYork, AZ 32049','NewYork',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330211,9193,'info@sheratonhotels-NewYork1-az.com',3148204944,5,'84 County Rd, NewYork, AZ 32049','NewYork',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330212,9193,'info@sheratonhotels-NewYork2-az.com',3248204944,5,'85 County Rd, NewYork, AZ 32049','NewYork',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330213,9193,'info@sheratonhotels-NewYork3-az.com',3348204944,5,'86 County Rd, NewYork, AZ 32049','NewYork',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330214,9193,'info@sheratonhotels-NewYork4-az.com',3448204944,5,'87 County Rd, NewYork, AZ 32049','NewYork',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330215,9193,'info@sheratonhotels-NewYork5-az.com',3548204944,5,'88 County Rd, NewYork, AZ 32049','NewYork',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330216,9193,'info@sheratonhotels-NewYork6-az.com',3648204944,5,'89 County Rd, NewYork, AZ 32049','NewYork',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(330217,9193,'info@sheratonhotels-NewYork7-az.com',3748204944,5,'90 County Rd, NewYork, AZ 32049','NewYork',3);
 
 
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430210,7524,'info@deltahotels-SanFrancisco0-az.com',4048204944,5,'90 County Rd, SanFrancisco, AZ 42049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430211,7524,'info@deltahotels-SanFrancisco1-az.com',4148204944,5,'91 County Rd, SanFrancisco, AZ 42049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430212,7524,'info@deltahotels-SanFrancisco2-az.com',4248204944,5,'92 County Rd, SanFrancisco, AZ 42049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430213,7524,'info@deltahotels-SanFrancisco3-az.com',4348204944,5,'93 County Rd, SanFrancisco, AZ 42049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430214,7524,'info@deltahotels-SanFrancisco4-az.com',4448204944,5,'94 County Rd, SanFrancisco, AZ 42049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430215,7524,'info@deltahotels-SanFrancisco5-az.com',4548204944,5,'95 County Rd, SanFrancisco, AZ 42049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430216,7524,'info@deltahotels-SanFrancisco6-az.com',4648204944,5,'96 County Rd, SanFrancisco, AZ 42049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(430217,7524,'info@deltahotels-SanFrancisco7-az.com',4748204944,5,'97 County Rd, SanFrancisco, AZ 42049',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430210,7524,'info@deltahotels-SanFrancisco0-az.com',4048204944,5,'90 County Rd, SanFrancisco, AZ 42049','SanFrancisco',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430211,7524,'info@deltahotels-SanFrancisco1-az.com',4148204944,5,'91 County Rd, SanFrancisco, AZ 42049','SanFrancisco',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430212,7524,'info@deltahotels-SanFrancisco2-az.com',4248204944,5,'92 County Rd, SanFrancisco, AZ 42049','SanFrancisco',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430213,7524,'info@deltahotels-SanFrancisco3-az.com',4348204944,5,'93 County Rd, SanFrancisco, AZ 42049','SanFrancisco',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430214,7524,'info@deltahotels-SanFrancisco4-az.com',4448204944,5,'94 County Rd, SanFrancisco, AZ 42049','SanFrancisco',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430215,7524,'info@deltahotels-SanFrancisco5-az.com',4548204944,5,'95 County Rd, SanFrancisco, AZ 42049','SanFrancisco',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430216,7524,'info@deltahotels-SanFrancisco6-az.com',4648204944,5,'96 County Rd, SanFrancisco, AZ 42049','SanFrancisco',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(430217,7524,'info@deltahotels-SanFrancisco7-az.com',4748204944,5,'97 County Rd, SanFrancisco, AZ 42049','SanFrancisco',3);
 
 
 
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530210,2049,'info@marriotthotels-SouthCounty0-az.com',5048204944,5,'99 County Rd, SouthCounty, AZ 52049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530211,2049,'info@marriotthotels-SouthCounty1-az.com',5148204944,5,'100 County Rd, SouthCounty, AZ 52049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530212,2049,'info@marriotthotels-SouthCounty2-az.com',5248204944,5,'101 County Rd, SouthCounty, AZ 52049',1);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530213,2049,'info@marriotthotels-SouthCounty3-az.com',5348204944,5,'102 County Rd, SouthCounty, AZ 52049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530214,2049,'info@marriotthotels-SouthCounty4-az.com',5448204944,5,'103 County Rd, SouthCounty, AZ 52049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530215,2049,'info@marriotthotels-SouthCounty5-az.com',5548204944,5,'104 County Rd, SouthCounty, AZ 52049',2);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530216,2049,'info@marriotthotels-SouthCounty6-az.com',5648204944,5,'105 County Rd, SouthCounty, AZ 52049',3);
-INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
-(530217,2049,'info@marriotthotels-SouthCounty7-az.com',5748204944,5,'106 County Rd, SouthCounty, AZ 52049',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530210,2049,'info@marriotthotels-SouthCounty0-az.com',5048204944,5,'99 County Rd, SouthCounty, AZ 52049','SouthCounty',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530211,2049,'info@marriotthotels-SouthCounty1-az.com',5148204944,5,'100 County Rd, SouthCounty, AZ 52049','SouthCounty',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530212,2049,'info@marriotthotels-SouthCounty2-az.com',5248204944,5,'101 County Rd, SouthCounty, AZ 52049','SouthCounty',1);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530213,2049,'info@marriotthotels-SouthCounty3-az.com',5348204944,5,'102 County Rd, SouthCounty, AZ 52049','SouthCounty',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530214,2049,'info@marriotthotels-SouthCounty4-az.com',5448204944,5,'103 County Rd, SouthCounty, AZ 52049','SouthCounty',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530215,2049,'info@marriotthotels-SouthCounty5-az.com',5548204944,5,'104 County Rd, SouthCounty, AZ 52049','SouthCounty',2);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530216,2049,'info@marriotthotels-SouthCounty6-az.com',5648204944,5,'105 County Rd, SouthCounty, AZ 52049','SouthCounty',3);
+INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VALUES
+(530217,2049,'info@marriotthotels-SouthCounty7-az.com',5748204944,5,'106 County Rd, SouthCounty, AZ 52049','SouthCounty',3);
 
 
 
@@ -126,483 +126,483 @@ INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Category) VALUES
 SELECT * FROM Hotel;
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(510,530210,350.00,5,'None','Partial-View',5);
+(510,530210,350.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(511,530210,340.00,4,'None','View',4);
+(511,530210,340.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(512,530210,330.00,3,'None','Partial-View',3);
+(512,530210,330.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(513,530210,320.00,2,'None','None',2);
+(513,530210,320.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(514,530210,310.00,1,'None','View',1);
+(514,530210,310.00,TRUE,TRUE,'Sea View','King Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(515,530211,350.00,5,'None','Partial-View',5);
+(515,530211,350.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(516,530211,340.00,4,'None','View',4);
+(516,530211,340.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(517,530211,330.00,3,'None','Partial-View',3);
+(517,530211,330.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(518,530211,320.00,2,'None','None',2);
+(518,530211,320.00,TRUE,TRUE,'Sea View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(519,530211,310.00,1,'None','View',1);
+(519,530211,310.00,TRUE,TRUE,'Sea View','King Bed');
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(520,530212,350.00,5,'None','Partial-View',5);
+(520,530212,350.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(521,530212,340.00,4,'None','View',4);
+(521,530212,340.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(522,530212,330.00,3,'None','Partial-View',3);
+(522,530212,330.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(523,530212,320.00,2,'None','None',2);
+(523,530212,320.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(524,530212,310.00,1,'None','View',1);
+(524,530212,310.00,TRUE,TRUE,'Sea View','Queen Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(525,530213,350.00,5,'None','Partial-View',5);
+(525,530213,350.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(526,530213,340.00,4,'None','View',4);
+(526,530213,340.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(527,530213,330.00,3,'None','Partial-View',3);
+(527,530213,330.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(528,530213,320.00,2,'None','None',2);
+(528,530213,320.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(529,530213,310.00,1,'None','View',1);
+(529,530213,310.00,TRUE,TRUE,'Sea View','Queen Bed');
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(530,530214,350.00,5,'None','Partial-View',5);
+(530,530214,350.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(531,530214,340.00,4,'None','View',4);
+(531,530214,340.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(532,530214,330.00,3,'None','Partial-View',3);
+(532,530214,330.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(533,530214,320.00,2,'None','None',2);
+(533,530214,320.00,TRUE,TRUE,'Sea View','Queen Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(534,530214,310.00,1,'None','View',1);
+(534,530214,310.00,TRUE,TRUE,'Sea View','Queen Bed');
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(535,530215,350.00,5,'None','Partial-View',5);
+(535,530215,350.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(536,530215,340.00,4,'None','View',4);
+(536,530215,340.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(537,530215,330.00,3,'None','Partial-View',3);
+(537,530215,330.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(538,530215,320.00,2,'None','None',2);
+(538,530215,320.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(539,530215,310.00,1,'None','View',1);
+(539,530215,310.00,TRUE,TRUE,'Sea View','Double Bed');
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(540,530216,350.00,5,'None','Partial-View',5);
+(540,530216,350.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(541,530216,340.00,4,'None','View',4);
+(541,530216,340.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(542,530216,330.00,3,'None','Partial-View',3);
+(542,530216,330.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(543,530216,320.00,2,'None','None',2);
+(543,530216,320.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(544,530216,310.00,1,'None','View',1);
+(544,530216,310.00,TRUE,TRUE,'Sea View','Double Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(545,530217,350.00,5,'None','Partial-View',5);
+(545,530217,350.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(546,530217,340.00,4,'None','View',4);
+(546,530217,340.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(547,530217,330.00,3,'None','Partial-View',3);
+(547,530217,330.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(548,530217,320.00,2,'None','None',2);
+(548,530217,320.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(549,530217,310.00,1,'None','View',1);
+(549,530217,310.00,TRUE,TRUE,'Sea View','Double Bed');
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(410,430210,350.00,5,'None','Partial-View',5);
+(410,430210,350.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(411,430210,340.00,4,'None','View',4);
+(411,430210,340.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(412,430210,330.00,3,'None','Partial-View',3);
+(412,430210,330.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(413,430210,320.00,2,'None','None',2);
+(413,430210,320.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(414,430210,310.00,1,'None','View',1);
+(414,430210,310.00,TRUE,TRUE,'Sea View','Double Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(415,430211,350.00,5,'None','Partial-View',5);
+(415,430211,350.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(416,430211,340.00,4,'None','View',4);
+(416,430211,340.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(417,430211,330.00,3,'None','Partial-View',3);
+(417,430211,330.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(418,430211,320.00,2,'None','None',2);
+(418,430211,320.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(419,430211,310.00,1,'None','View',1);
+(419,430211,310.00,TRUE,TRUE,'Sea View','Double Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(420,430212,350.00,5,'None','Partial-View',5);
+(420,430212,350.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(421,430212,340.00,4,'None','View',4);
+(421,430212,340.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(422,430212,330.00,3,'None','Partial-View',3);
+(422,430212,330.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(423,430212,320.00,2,'None','None',2);
+(423,430212,320.00,TRUE,TRUE,'Sea View','Double Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(424,430212,310.00,1,'None','View',1);
+(424,430212,310.00,TRUE,TRUE,'Sea View','Double Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(425,430213,350.00,5,'None','Partial-View',5);
+(425,430213,350.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(426,430213,340.00,4,'None','View',4);
+(426,430213,340.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(427,430213,330.00,3,'None','Partial-View',3);
+(427,430213,330.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(428,430213,320.00,2,'None','None',2);
+(428,430213,320.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(429,430213,310.00,1,'None','View',1);
+(429,430213,310.00,TRUE,TRUE,'Sea View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(430,430214,350.00,5,'None','Partial-View',5);
+(430,430214,350.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(431,430214,340.00,4,'None','View',4);
+(431,430214,340.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(432,430214,330.00,3,'None','Partial-View',3);
+(432,430214,330.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(433,430214,320.00,2,'None','None',2);
+(433,430214,320.00,TRUE,TRUE,'Sea View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(434,430214,310.00,1,'None','View',1);
+(434,430214,310.00,TRUE,TRUE,'Sea View','Single Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(435,430215,350.00,5,'None','Partial-View',5);
+(435,430215,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(436,430215,340.00,4,'None','View',4);
+(436,430215,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(437,430215,330.00,3,'None','Partial-View',3);
+(437,430215,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(438,430215,320.00,2,'None','None',2);
+(438,430215,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(439,430215,310.00,1,'None','View',1);
+(439,430215,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(440,430216,350.00,5,'None','Partial-View',5);
+(440,430216,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(441,430216,340.00,4,'None','View',4);
+(441,430216,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(442,430216,330.00,3,'None','Partial-View',3);
+(442,430216,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(443,430216,320.00,2,'None','None',2);
+(443,430216,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(444,430216,310.00,1,'None','View',1);
+(444,430216,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(445,430217,350.00,5,'None','Partial-View',5);
+(445,430217,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(446,430217,340.00,4,'None','View',4);
+(446,430217,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(447,430217,330.00,3,'None','Partial-View',3);
+(447,430217,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(448,430217,320.00,2,'None','None',2);
+(448,430217,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(449,430217,310.00,1,'None','View',1);
+(449,430217,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(310,330210,350.00,5,'None','Partial-View',5);
+(310,330210,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(311,330210,340.00,4,'None','View',4);
+(311,330210,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(312,330210,330.00,3,'None','Partial-View',3);
+(312,330210,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(313,330210,320.00,2,'None','None',2);
+(313,330210,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(314,330210,310.00,1,'None','View',1);
+(314,330210,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(315,330211,350.00,5,'None','Partial-View',5);
+(315,330211,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(316,330211,340.00,4,'None','View',4);
+(316,330211,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(317,330211,330.00,3,'None','Partial-View',3);
+(317,330211,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(318,330211,320.00,2,'None','None',2);
+(318,330211,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(319,330211,310.00,1,'None','View',1);
+(319,330211,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(320,330212,350.00,5,'None','Partial-View',5);
+(320,330212,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(321,330212,340.00,4,'None','View',4);
+(321,330212,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(322,330212,330.00,3,'None','Partial-View',3);
+(322,330212,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(323,330212,320.00,2,'None','None',2);
+(323,330212,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(324,330212,310.00,1,'None','View',1);
+(324,330212,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(325,330213,350.00,5,'None','Partial-View',5);
+(325,330213,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(326,330213,340.00,4,'None','View',4);
+(326,330213,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(327,330213,330.00,3,'None','Partial-View',3);
+(327,330213,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(328,330213,320.00,2,'None','None',2);
+(328,330213,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(329,330213,310.00,1,'None','View',1);
+(329,330213,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(330,330214,350.00,5,'None','Partial-View',5);
+(330,330214,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(331,330214,340.00,4,'None','View',4);
+(331,330214,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(332,330214,330.00,3,'None','Partial-View',3);
+(332,330214,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(333,330214,320.00,2,'None','None',2);
+(333,330214,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(334,330214,310.00,1,'None','View',1);
+(334,330214,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(335,330215,350.00,5,'None','Partial-View',5);
+(335,330215,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(336,330215,340.00,4,'None','View',4);
+(336,330215,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(337,330215,330.00,3,'None','Partial-View',3);
+(337,330215,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(338,330215,320.00,2,'None','None',2);
+(338,330215,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(339,330215,310.00,1,'None','View',1);
+(339,330215,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(340,330216,350.00,5,'None','Partial-View',5);
+(340,330216,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(341,330216,340.00,4,'None','View',4);
+(341,330216,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(342,330216,330.00,3,'None','Partial-View',3);
+(342,330216,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(343,330216,320.00,2,'None','None',2);
+(343,330216,320.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(344,330216,310.00,1,'None','View',1);
+(344,330216,310.00,TRUE,TRUE,'Mountain View','Single Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(345,330217,350.00,5,'None','Partial-View',5);
+(345,330217,350.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(346,330217,340.00,4,'None','View',4);
+(346,330217,340.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(347,330217,330.00,3,'None','Partial-View',3);
+(347,330217,330.00,TRUE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(348,330217,320.00,2,'None','None',2);
+(348,330217,320.00,FALSE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(349,330217,310.00,1,'None','View',1);
+(349,330217,310.00,FALSE,TRUE,'Mountain View','Single Bed');
 
 
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(110,130294,350.00,5,'None','Partial-View',5);
+(110,130294,350.00,FALSE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(111,130294,340.00,4,'None','View',4);
+(111,130294,340.00,FALSE,TRUE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(112,130294,330.00,3,'None','Partial-View',3);
+(112,130294,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(113,130294,320.00,2,'None','None',2);
+(113,130294,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(114,130294,310.00,1,'None','View',1);
+(114,130294,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(115,130295,350.00,5,'None','Partial-View',5);
+(115,130295,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(116,130295,340.00,4,'None','View',4);
+(116,130295,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(117,130295,330.00,3,'None','Partial-View',3);
+(117,130295,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(118,130295,320.00,2,'None','None',2);
+(118,130295,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(119,130295,310.00,1,'None','View',1);
+(119,130295,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(120,130296,350.00,5,'None','Partial-View',5);
+(120,130296,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(121,130296,340.00,4,'None','View',4);
+(121,130296,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(122,130296,330.00,3,'None','Partial-View',3);
+(122,130296,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(123,130296,320.00,2,'None','None',2);
+(123,130296,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(124,130296,310.00,1,'None','View',1);
+(124,130296,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(125,130297,350.00,5,'None','Partial-View',5);
+(125,130297,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(126,130297,340.00,4,'None','View',4);
+(126,130297,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(127,130297,330.00,3,'None','Partial-View',3);
+(127,130297,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(128,130297,320.00,2,'None','None',2);
+(128,130297,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(129,130297,310.00,1,'None','View',1);
+(129,130297,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(130,130298,350.00,5,'None','Partial-View',5);
+(130,130298,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(131,130298,340.00,4,'None','View',4);
+(131,130298,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(132,130298,330.00,3,'None','Partial-View',3);
+(132,130298,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(133,130298,320.00,2,'None','None',2);
+(133,130298,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(134,130298,310.00,1,'None','View',1);
+(134,130298,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(135,130299,350.00,5,'None','Partial-View',5);
+(135,130299,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(136,130299,340.00,4,'None','View',4);
+(136,130299,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(137,130299,330.00,3,'None','Partial-View',3);
+(137,130299,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(138,130299,320.00,2,'None','None',2);
+(138,130299,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(139,130299,310.00,1,'None','View',1);
+(139,130299,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(140,130210,350.00,5,'None','Partial-View',5);
+(140,130210,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(141,130210,340.00,4,'None','View',4);
+(141,130210,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(142,130210,330.00,3,'None','Partial-View',3);
+(142,130210,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(143,130210,320.00,2,'None','None',2);
+(143,130210,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(144,130210,310.00,1,'None','View',1);
+(144,130210,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(145,130211,350.00,5,'None','Partial-View',5);
+(145,130211,350.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(146,130211,340.00,4,'None','View',4);
+(146,130211,340.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(147,130211,330.00,3,'None','Partial-View',3);
+(147,130211,330.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(148,130211,320.00,2,'None','None',2);
+(148,130211,320.00,FALSE,FALSE,'Mountain View','Single Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(149,130211,310.00,1,'None','View',1);
+(149,130211,310.00,FALSE,FALSE,'Mountain View','Single Bed');
 
 
 
 
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(210,230284,350.00,5,'None','Partial-View',5);
+(210,230284,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(211,230284,340.00,4,'None','View',4);
+(211,230284,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(212,230284,330.00,3,'None','Partial-View',3);
+(212,230284,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(213,230284,320.00,2,'None','None',2);
+(213,230284,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(214,230284,310.00,1,'None','View',1);
+(214,230284,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(215,230285,350.00,5,'None','Partial-View',5);
+(215,230285,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(216,230285,340.00,4,'None','View',4);
+(216,230285,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(217,230285,330.00,3,'None','Partial-View',3);
+(217,230285,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(218,230285,320.00,2,'None','None',2);
+(218,230285,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(219,230285,310.00,1,'None','View',1);
+(219,230285,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(220,230286,350.00,5,'None','Partial-View',5);
+(220,230286,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(221,230286,340.00,4,'None','View',4);
+(221,230286,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(222,230286,330.00,3,'None','Partial-View',3);
+(222,230286,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(223,230286,320.00,2,'None','None',2);
+(223,230286,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(224,230286,310.00,1,'None','View',1);
+(224,230286,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(225,230287,350.00,5,'None','Partial-View',5);
+(225,230287,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(226,230287,340.00,4,'None','View',4);
+(226,230287,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(227,230287,330.00,3,'None','Partial-View',3);
+(227,230287,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(228,230287,320.00,2,'None','None',2);
+(228,230287,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(229,230287,310.00,1,'None','View',1);
+(229,230287,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(230,230288,350.00,5,'None','Partial-View',5);
+(230,230288,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(231,230288,340.00,4,'None','View',4);
+(231,230288,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(232,230288,330.00,3,'None','Partial-View',3);
+(232,230288,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(233,230288,320.00,2,'None','None',2);
+(233,230288,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(234,230288,310.00,1,'None','View',1);
+(234,230288,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(235,230289,350.00,5,'None','Partial-View',5);
+(235,230289,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(236,230289,340.00,4,'None','View',4);
+(236,230289,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(237,230289,330.00,3,'None','Partial-View',3);
+(237,230289,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(238,230289,320.00,2,'None','None',2);
+(238,230289,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(239,230289,310.00,1,'None','View',1);
+(239,230289,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(240,230290,350.00,5,'None','Partial-View',5);
+(240,230290,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(241,230290,340.00,4,'None','View',4);
+(241,230290,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(242,230290,330.00,3,'None','Partial-View',3);
+(242,230290,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(243,230290,320.00,2,'None','None',2);
+(243,230290,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(244,230290,310.00,1,'None','View',1);
+(244,230290,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(245,230291,350.00,5,'None','Partial-View',5);
+(245,230291,350.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(246,230291,340.00,4,'None','View',4);
+(246,230291,340.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(247,230291,330.00,3,'None','Partial-View',3);
+(247,230291,330.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(248,230291,320.00,2,'None','None',2);
+(248,230291,320.00,FALSE,FALSE,'Mountain View','King Bed');
 INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(249,230291,310.00,1,'None','View',1);
+(249,230291,310.00,FALSE,FALSE,'Mountain View','King Bed');
 
 
 
@@ -615,8 +615,10 @@ INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity)
 
 
 
-
-
+INSERT INTO RoomAmenities (Amenities, Price) VALUES
+  ('{tv}', 150.00),
+  ('{tv,wifi}', 250.00),
+  ('{tv,wifi,mini-bar}', 350.00);
 
 
 
@@ -1164,15 +1166,6 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 
 
 
-
-
-
-
-
-
-
-
-
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 (410,430210,'Swimming Pool');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
@@ -1712,11 +1705,6 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 (449,430217,'Air Conditioning');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 (449,430217,'Mini-bar');
-
-
-
-
-
 
 
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
@@ -2803,14 +2791,6 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 (149,130211,'Mini-bar');
 
 
-
-
-
-
-
-
-
-
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 (210,230284,'Swimming Pool');
 INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
@@ -3354,11 +3334,6 @@ INSERT INTO RoomAmenity(RoomNum,HotelID,Amenity) VALUES
 
 
 
-
-
-
-
-
 SELECT * from RoomAmenity;
 
 
@@ -3369,11 +3344,110 @@ SELECT * from RoomAmenity;
 
 
 DELETE from Employee;
+
 INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
 (123321111,'Chef','John Doe','6201 Gulf Fwy, Texas City, TX 77591',1);
 INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
-(876678565,'Concierge','Jane Robbins','2760 Iger St, New Braunfels, TX 78130',1);
+(976678565,'Concierge','Jane Robbins','2760 Iger St, New Braunfels, TX 78130',1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(076678565,'Concierge', 'Jane Smith', '456 Elm St, Town, CA 54321', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(816678565,'Chef', 'Michael Johnson', '789 Oak St, Village, TX 67890', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(826678565,'Waiter', 'Emily Brown', '101 Pine St, Hamlet, FL 13579', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(836678565,'Cleaner', 'David Lee', '202 Maple St, Borough, WA 24680', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(846678565,'Security', 'Sarah Wilson', '303 Cedar St, County, IL 97531', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(856678565,'Valet', 'Jessica Garcia', '404 Birch St, District, MI 86420', 0);
 
+
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(176678565,'Manager', 'John Doe', '61 County Rd, Newberry, AZ 22049','Newberry', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(276678565,'Manager', 'John A', '62 County Rd, Newberry, AZ 22049','Newberry', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(376678565,'Manager', 'John B', '63 County Rd, Newberry, AZ 22049','Newberry', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(476678565,'Manager', 'John C', '64 County Rd, Newberry, AZ 22049','Newberry', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(576678065,'Manager', 'John D', '65 County Rd, Newberry, AZ 22049','Newberry', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(676678965,'Manager', 'John E', '66 County Rd, Newberry, AZ 22049','Newberry', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(776678865,'Manager', 'John F', '67 County Rd, Newberry, AZ 22049','Newberry', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(876678765,'Manager', 'John G', '68 County Rd, Newberry, AZ 22049','Newberry', 0);
+
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(176678665,'Manager', 'John H','69 County Rd, Cityville, AZ 12049','Cityville', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(276678465,'Manager', 'John I','70 County Rd, Cityville, AZ 12049','Cityville', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(376678365,'Manager', 'John J','71 County Rd, Cityville, AZ 12049','Cityville', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(476678265,'Manager', 'John K','72 County Rd, Cityville, AZ 12049','Cityville', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(576678165,'Manager', 'John L','73 County Rd, Cityville, AZ 12049','Cityville', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(676670565,'Manager', 'John M','74 County Rd, Cityville, AZ 12049','Cityville', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(776679565,'Manager', 'John N','75 County Rd, Cityville, AZ 12049','Cityville', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(876677565,'Manager', 'John O','76 County Rd, Cityville, AZ 12049','Cityville', 0);
+
+
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(176676565,'Manager', 'John P', '77 County Rd, NewYork, AZ 32049','NewYork', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(276675565,'Manager', 'John Q', '78 County Rd, NewYork, AZ 32049','NewYork', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(376674565,'Manager', 'John R', '79 County Rd, NewYork, AZ 32049','NewYork', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(476673565,'Manager', 'John S', '80 County Rd, NewYork, AZ 32049','NewYork', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(576672565,'Manager', 'John T', '81 County Rd, NewYork, AZ 32049','NewYork', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(676671565,'Manager', 'John U', '82 County Rd, NewYork, AZ 32049','NewYork', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(776608565,'Manager', 'John V', '83 County Rd, NewYork, AZ 32049','NewYork', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(876698565,'Manager', 'John W', '84 County Rd, NewYork, AZ 32049','NewYork', 1);
+
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(176668565,'Manager', 'John X', '85 County Rd, SanFrancisco, AZ 42049', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(276658565,'Manager', 'John Y', '86 County Rd, SanFrancisco, AZ 42049', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(376648565,'Manager', 'John Z', '87 County Rd, SanFrancisco, AZ 42049', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(476638565,'Manager', 'John AA','88 County Rd, SanFrancisco, AZ 42049', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(576628565,'Manager', 'John BB', '89 County Rd, SanFrancisco, AZ 42049', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(676618565,'Manager', 'John CC', '90 County Rd, SanFrancisco, AZ 42049', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(776178565,'Manager', 'John DD', '91 County Rd, SanFrancisco, AZ 42049', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(879678565,'Manager', 'John EE', '92 County Rd, SanFrancisco, AZ 42049', 0);
+
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(178678565,'Manager', 'John FF', '93 County Rd, SouthCounty, AZ 52049','SouthCounty', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(277678565,'Manager', 'John JJ', '94 County Rd, SouthCounty, AZ 52049','SouthCounty', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(376678565,'Manager', 'John HH', '95 County Rd, SouthCounty, AZ 52049','SouthCounty', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(475678565,'Manager', 'John II', '96 County Rd, SouthCounty, AZ 52049','SouthCounty', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(574678565,'Manager', 'John GG', '97 County Rd, SouthCounty, AZ 52049','SouthCounty', 0);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(673678565,'Manager', 'John KK', '98 County Rd, SouthCounty, AZ 52049','SouthCounty', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(772678565,'Manager', 'John LL', '99 County Rd, SouthCounty, AZ 52049','SouthCounty', 1);
+INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
+(871678565,'Manager', 'John MM', '100 County Rd, SouthCounty, AZ 52049','SouthCounty', 0);
 
 
 
@@ -3393,11 +3467,95 @@ INSERT INTO Renting(RentingID,HotelID,RentingDate,RoomNum,EmployeeSIN) VALUES
 
 
 SELECT * from Renting;
-INSERT INTO Manager(ManagerID,HotelID) VALUES
-(230444220,230284);
+
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(100000,176678565,230284);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(200000,276678565,230285);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(300000,376678565,230286);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(400000,476678565,230287);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(500000,576678065,230288);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(600000,676678965,230289);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(610000,776678865,230290);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(620000,876678765,230291);
 
 
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(710000,176678665,130294);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(720000,276678465,130295);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(730000,376678365,130296);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(740000,476678265,130297);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(750000,576678165,130298);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(760000,676670565,130299);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(770000,776679565,130210);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(780000,876677565,130211);
 
+
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(700000,176676565,330210);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(800000,276675565,330211);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(900000,376674565,330212);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(110000,476673565,330213);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(120000,576672565,330214);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(130000,676671565,330215);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(810000,776608565,330216);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(820000,876698565,330217);
+
+
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(140000,176668565,430210);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(150000,276658565,430211);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(160000,376648565,430212);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(170000,476638565,430213);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(180000,576628565,430214);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(190000,676618565,430215);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(101000,776178565,430216);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(102000,879678565,430217);
+
+
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(210000,178678565,530210);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(220000,277678565,530211);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(230000,376678565,530212);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(240000,475678565,530213);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(250000,574678565,530214);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(103000,673678565,530215);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(104000,772678565,530216);
+INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
+(105000,871678565,530217);
 
 
 
@@ -3414,10 +3572,16 @@ INSERT INTO Customer(CustomerID,Addr,RegistrationDate,IDType,FullName,EmployeeSI
 
 
 
-
 SELECT * from Customer;
-INSERT INTO Booking(BookingID,HotelID,RoomNum,BookingDate,CheckInDate,CustomerID,EmployeeSIN) VALUES
-(3029489,230284,310,'January 9, 2024','January 19, 2024',310322,876678565);
+INSERT INTO Booking(CustomerID,FullName,Addr,IDType,RegistrationDate，EmployeeSIN) VALUES
+(00000033,'Alice Johnson', '123 Main St, City, NY 12345', 'Driver''s License', CURRENT_DATE,178678565);
+(00000034,'Bob Smith', '456 Elm St, Town, CA 54321', 'Passport', CURRENT_DATE);
+(00000035,'Charlie Brown', '789 Oak St, Village, TX 67890', 'Health Card', CURRENT_DATE,277678565);
+(00000036,'David Lee', '101 Pine St, Hamlet, FL 13579', 'SIN', CURRENT_DATE);
+(00000037,'Emma Wilson', '202 Maple St, Borough, WA 24680', 'Driver''s License', CURRENT_DATE,376678565)；
+(00000038,'Frank Garcia', '303 Cedar St, County, IL 97531', 'Passport', CURRENT_DATE,475678565);
+(00000039,'Grace Martinez', '404 Birch St, District, MI 86420', 'SIN', CURRENT_DATE,574678565);
+(00000040,'Henry Taylor', '505 Willow St, Township, PA 75309', 'Health Card', CURRENT_DATE,673678565);
 
 
 
