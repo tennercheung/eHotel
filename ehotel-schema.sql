@@ -1,5 +1,5 @@
 SET search_path = "ehotel";
-DROP TABLE IF EXISTS HotelChain, Hotel, Room, RoomAmenities, Employee, Renting, Manager, Customer, Booking, Payments;
+DROP TABLE IF EXISTS HotelChain, Hotel, Room, RoomAmenities, Employee, Renting, Manager, Customer, Booking, Payments, Archives;
 
 CREATE TABLE HotelChain (
 	ChainID SERIAL UNIQUE,
@@ -94,7 +94,7 @@ CREATE TABLE Renting (
     CheckOutDate DATE,
     RoomNum INTEGER,
     PaymentID SERIAL UNIQUE,
-    EmployeeSIN INTEGER,
+    EmployeeSIN SERIAL,
     PRIMARY KEY (RentingID, HotelID, RoomNum),
     FOREIGN KEY (RoomNum, HotelID) REFERENCES Room (RoomNum, HotelID),
     FOREIGN KEY (EmployeeSIN) REFERENCES Employee
@@ -108,6 +108,17 @@ CREATE TABLE Payments (
     FOREIGN KEY (PaymentID) REFERENCES Renting (PaymentID)
 );
 
+CREATE TABLE Archives (
+    BookingID SERIAL,-- null if it's a renting
+    HotelID SERIAL,
+    RoomNum INTEGER,
+    BookingDate DATE,-- null if it's a renting
+    CheckInDate DATE,
+    CheckOutDate DATE,
+    RentingID SERIAL, -- null if it's a booking
+    RentingDate DATE, -- null if it's a booking
+    EmployeeSIN SERIAL
+);
 
 -- CREATE TABLE BookingToRental(
 -- 	EmployeeSIN SERIAL,
