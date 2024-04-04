@@ -45,8 +45,8 @@ CREATE TABLE Room (
 	RoomNum INTEGER UNIQUE,
 	HotelID SERIAL,
 	Price NUMERIC(6,2) CHECK (Price IN (150.00,250.00,350.00)),
-	Extendability BOOLEAN, -- if a bed can be added to the room
-	Problem BOOLEAN, -- if there are damages/problems
+	Extendability VARCHAR (3) CHECK (Extendability IN ('Yes','No')), -- if a bed can be added to the room
+	Problem VARCHAR (3) CHECK (Problem IN ('Yes','No')), -- if there are damages/problems
 	RoomView VARCHAR (20) CHECK (RoomView IN ('Sea View', 'Mountain View')),
 	Capacity INTEGER CHECK (Capacity IN (1,2,3,4)),
 	PRIMARY KEY(RoomNum,HotelID),

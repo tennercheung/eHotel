@@ -13,8 +13,9 @@ INSERT INTO Hotel(HotelID,ChainID,Email,PhoneNum,NumRooms,Addr,Area,Category) VA
 SELECT * FROM Hotel;
 
 DELETE FROM Room CASCADE;
-INSERT INTO Room (RoomNum,HotelID,Price,Extendability,Problem,RoomView,Capacity) VALUES
-(510,230284,350.00,TRUE,TRUE,'Sea View',1);
+INSERT INTO Room (RoomNum, HotelID, Price, Extendability, Problem, RoomView, Capacity) VALUES
+(510, 230284, 350.00, 'Yes', 'No', 'Sea View', 1),
+(511, 230284, 350.00, 'Yes', 'No', 'Sea View', 1);
 
 SELECT * FROM Room;
 
