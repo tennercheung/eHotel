@@ -7,9 +7,9 @@ public class Room {
     private final Boolean isExtendable;
     private final Boolean hasProblems;
     private final String view;
-    private final String capacity;
+    private final Integer capacity;
 
-    public Room(Integer hotelId, Integer num, Double price, Boolean isExtendable, Boolean hasProblems, String view, String capacity) {
+    public Room(Integer hotelId, Integer num, Double price, Boolean isExtendable, Boolean hasProblems, String view, Integer capacity) {
         this.hotelId = hotelId;
         this.num = num;
         this.price = price;

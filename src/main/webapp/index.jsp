@@ -56,12 +56,7 @@
                         </div>
                         <div class="w3-half">
                             <label><i class="fa fa-user"></i> Room Capacity</label>
-                            <select class="w3-input w3-border" name="capacity" value="0" required>
-                                <option value="0">Single Bed</option>
-                                <option value="1">Double Bed</option>
-                                <option value="2">King Bed</option>
-                                <option value="3">Queen Bed</option>
-                            </select>
+                            <input class="w3-input w3-border" type="number" value="1" name="capacity" min="1" max="99" required>
                         </div>
                     </div>
                     <div class="w3-row-padding" style="margin:8px -16px;">
