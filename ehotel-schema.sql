@@ -94,9 +94,11 @@ CREATE TABLE Renting (
     CheckOutDate DATE,
     RoomNum INTEGER,
     PaymentID SERIAL UNIQUE,
+	CustomerID SERIAL,
     EmployeeSIN SERIAL,
     PRIMARY KEY (RentingID, HotelID, RoomNum),
     FOREIGN KEY (RoomNum, HotelID) REFERENCES Room (RoomNum, HotelID),
+	FOREIGN KEY(CustomerID) REFERENCES Customer,
     FOREIGN KEY (EmployeeSIN) REFERENCES Employee
 );
 
@@ -142,17 +144,9 @@ JOIN RoomAmenities ON Room.Price = RoomAmenities.Price;
 SELECT PaymentID FROM Renting WHERE RentingID = 20220;
 
 -- return all customers for a hotel
-SELECT DISTINCT c.*
-FROM Customer c
-JOIN (
-    SELECT CustomerID, HotelID
-    FROM Booking
-    WHERE HotelID = 230284
-    UNION
-    SELECT CustomerID, HotelID
-    FROM Renting
-    WHERE HotelID = 230284
-) AS cr ON c.CustomerID = cr.CustomerID;
+(SELECT 230284 AS HotelID, CustomerID FROM Booking WHERE HotelID = 230284)
+UNION
+(SELECT 230284 AS HotelID, CustomerID FROM Renting WHERE HotelID = 230284);
 
 -- return total num bookings for a hotel
 SELECT HotelID, COUNT(*) AS TotalBookings FROM Booking WHERE HotelID = 230284 GROUP BY HotelID;
@@ -174,21 +168,13 @@ LEFT JOIN Booking b ON r.RoomNum = b.RoomNum AND r.HotelID = b.HotelID
 LEFT JOIN Renting rn ON r.RoomNum = rn.RoomNum AND r.HotelID = rn.HotelID
 WHERE h.Area = 'Newberry' 
 AND (
-    -- Check if the room is not booked for Jan 1, 2024 to Jan 2, 2024
-    (b.RoomNum IS NULL OR ('2024-01-01' < b.CheckInDate AND '2024-01-02' > b.CheckOutDate))
+    -- Check if the room is not booked or rented for the specified date range
+    (b.RoomNum IS NULL OR ('2024-01-21' >= b.CheckOutDate OR '2024-01-22' <= b.CheckInDate))
     AND
-    -- Check if the room is not rented for Jan 1, 2024 to Jan 2, 2024
-    (rn.RoomNum IS NULL OR ('2024-01-01' < rn.CheckInDate AND '2024-01-02' > rn.CheckOutDate))
-    AND
-    -- Check if the room is available for Dec 31, 2023 to Jan 1, 2024
-    (b.RoomNum IS NULL OR ('2023-12-31' < b.CheckInDate OR '2024-01-01' >= b.CheckOutDate))
-    AND
-    -- Check if the room is available for Jan 2, 2024 to Jan 3, 2024
-    (rn.RoomNum IS NULL OR ('2024-01-02' < rn.CheckInDate OR '2024-01-03' >= rn.CheckOutDate))
+    (rn.RoomNum IS NULL OR ('2024-01-21' >= rn.CheckOutDate OR '2024-01-22' <= rn.CheckInDate))
 );
 
 SELECT * FROM AvailableRooms;
-
 
 
 --View 2

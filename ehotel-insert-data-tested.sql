@@ -33,10 +33,7 @@ INSERT INTO Employee(EmployeeSIN,PositionName,FullName,Addr,NumHotels) VALUES
 (871678565,'Manager','Jack Miles','142 Kansas St, Newport, OH 23049',1);
 SELECT * from Employee;
 
-DELETE FROM Renting CASCADE;
-INSERT INTO Renting(RentingID,HotelID,RentingDate,CheckInDate,CheckOutDate,RoomNum,PaymentID,EmployeeSIN) VALUES
-(20220, 230284,'January 20, 2024','January 21, 2024','January 22, 2024',510,21094204,123321111);
-SELECT * from Renting;
+
 
 DELETE FROM Manager CASCADE;
 INSERT INTO Manager (ManagerID,EmployeeSIN,HotelID) VALUES
@@ -48,6 +45,11 @@ INSERT INTO Customer(CustomerID,Addr,RegistrationDate,IDType,FullName) VALUES
 (310322,'598 TX St, Lake Jackson, TX 77566','January 19, 2024', 'Driver''s License', 'Jack Jones');
 
 SELECT * from Customer;
+
+DELETE FROM Renting CASCADE;
+INSERT INTO Renting(RentingID,HotelID,RentingDate,CheckInDate,CheckOutDate,RoomNum,PaymentID,CustomerID,EmployeeSIN) VALUES
+(20220, 230284,'January 20, 2024','January 21, 2024','January 22, 2024',510,21094204,310322,123321111);
+SELECT * from Renting;
 
 DELETE FROM Booking CASCADE;
 INSERT INTO Booking(BookingID,HotelID,RoomNum,BookingDate,CheckInDate,CheckOutDate,RentingID,CustomerID,EmployeeSIN) VALUES
