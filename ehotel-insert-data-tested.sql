@@ -2,15 +2,15 @@ SET search_path = "ehotel";
 
 DELETE FROM HotelChain CASCADE;
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
-(1202,1234567890,'info@hilton.com','123 Main St, Cityville, NY 12345',8);
+(1202,1234567890,'info@hilton.com','123 Main St, Cityville, NY 12345',0);
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
-(3104,2049184029,'info@haptoninn.com','92 Jersey Rd, Newtown, NJ 42230',8);
+(3104,2049184029,'info@haptoninn.com','92 Jersey Rd, Newtown, NJ 42230',0);
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
-(9193,1233920394,'info@sheratonhotels.com','2 Fox St, New York City, NY 12324',8);
+(9193,1233920394,'info@sheratonhotels.com','2 Fox St, New York City, NY 12324',0);
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
-(7524,6139302583,'info@deltahotels.com','55 Sunny Trail, San Francisco, CA 02331',8);
+(7524,6139302583,'info@deltahotels.com','55 Sunny Trail, San Francisco, CA 02331',0);
 INSERT INTO HotelChain (ChainID,PhoneNum,Email,CentralOfficeAddr,NumHotels) VALUES
-(2049,4129329048,'info@marriotthotels.com','3294 Main St, South County, OH 76205',8);
+(2049,4129329048,'info@marriotthotels.com','3294 Main St, South County, OH 76205',0);
 SELECT * FROM HotelChain;
 
 
@@ -758,21 +758,23 @@ SELECT * from Manager;
 DELETE FROM Customer CASCADE;
 INSERT INTO Customer(CustomerID,Addr,RegistrationDate,IDType,FullName) VALUES
 (310322,'598 TX St, Lake Jackson, TX 77566','January 19, 2024', 'Driver''s License', 'Jack Jones');
+INSERT INTO Customer(CustomerID,Addr,RegistrationDate,IDType,FullName) VALUES
+(310323,'23 Main St, Newberry, OH 74394','January 19, 2024', 'Driver''s License', 'Adam West');
 SELECT * from Customer;
-
-
-DELETE FROM Renting CASCADE;
-INSERT INTO Renting(RentingID,HotelID,RentingDate,CheckInDate,CheckOutDate,RoomNum,PaymentID,CustomerID,EmployeeSIN) VALUES
-(20220, 230284,'January 20, 2024','January 21, 2024','January 22, 2024',510,21094204,310322,976678565);
-SELECT * from Renting;
-
 
 DELETE FROM Booking CASCADE;
 INSERT INTO Booking(BookingID,HotelID,RoomNum,BookingDate,CheckInDate,CheckOutDate,RentingID,CustomerID,EmployeeSIN) VALUES
 (00000033,230284,510,'January 19, 2024','January 21, 2024','January 22, 2024',20220,310322,976678565);
+INSERT INTO Booking(BookingID,HotelID,RoomNum,BookingDate,CheckInDate,CheckOutDate,RentingID,CustomerID,EmployeeSIN) VALUES
+(00000034,130294,110,'January 25, 2024','January 26, 2024','February 1, 2024',20221,310323,476638565);
 SELECT * from Booking;
 
-
+DELETE FROM Renting CASCADE;
+INSERT INTO Renting(RentingID,HotelID,RentingDate,CheckInDate,CheckOutDate,RoomNum,PaymentID,CustomerID,EmployeeSIN) VALUES
+(20220, 230284,'January 20, 2024','January 21, 2024','January 22, 2024',510,21094204,310322,976678565);
+INSERT INTO Renting(RentingID,HotelID,RentingDate,CheckInDate,CheckOutDate,RoomNum,PaymentID,CustomerID,EmployeeSIN) VALUES
+(20221, 130294,'January 26, 2024','January 26, 2024','February 1, 2024',110,21242034,310323,476638565);
+SELECT * from Renting;
 
 ----- for inserting payment info -----
 -- INSERT INTO Payments (PaymentID,CreditCardNum,ExpiryMonth,ExpiryDay) VALUES

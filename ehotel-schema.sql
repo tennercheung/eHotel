@@ -110,6 +110,7 @@ CREATE TABLE Payments (
     FOREIGN KEY (PaymentID) REFERENCES Renting (PaymentID)
 );
 
+
 CREATE TABLE Archives (
 	ArchiveID SERIAL UNIQUE,
     BookingID SERIAL,-- null if it's a renting
@@ -125,6 +126,7 @@ CREATE TABLE Archives (
 	PRIMARY KEY(ArchiveID)
 );
 
+SELECT * FROM Archives;
 /************************/
 /*  Indexes  */
 /************************/
@@ -135,14 +137,15 @@ CREATE INDEX idx_room_hotelid ON Room (HotelID);
 -- index for Hotel for Area
 CREATE INDEX idx_hotel_area ON Hotel (Area);
 
-
+-- index for Renting for Checkout Date & Checkin Date
+CREATE INDEX idx_renting_checkinoutdate ON Renting(CheckInDate,CheckOutDate);
 
 /************************/
 /*  QUERIES  */
 /************************/
 
 -- return hotels given an area
-SELECT * FROM Hotel WHERE Area = 'New York City';
+SELECT * FROM Hotel WHERE Area = 'Newberry';
 
 -- return rooms with amenitites based on the room price
 SELECT Room.*, RoomAmenities.Amenities
@@ -162,6 +165,61 @@ SELECT HotelID, COUNT(*) AS TotalBookings FROM Booking WHERE HotelID = 230284 GR
 -- return total num rentings for a hotel
 SELECT HotelID, COUNT(*) AS TotalRentings FROM Renting WHERE HotelID = 230284 GROUP BY HotelID;
 
+/************************/
+/*  Modifications  */
+/************************/
+
+CREATE OR REPLACE FUNCTION increase_hotelCount()
+RETURNS TRIGGER AS
+$$
+BEGIN
+    UPDATE HotelChain
+    SET NumHotels = NumHotels + 1
+    WHERE ChainID = NEW.ChainID;
+    RETURN NEW;
+END;
+$$ LANGUAGE PLPGSQL;
+
+CREATE OR REPLACE TRIGGER increase_hotelCount
+  AFTER INSERT ON Hotel
+  FOR EACH ROW
+  EXECUTE PROCEDURE increase_hotelCount();
+
+-- copy booking to archive
+CREATE OR REPLACE FUNCTION archive_booking()
+RETURNS TRIGGER AS
+$$
+BEGIN
+    INSERT INTO archives(RoomNum, BookingDate, CheckinDate, CheckOutDate,CustomerID, HotelID,EmployeeSIN)
+    SELECT NEW.RoomNum, NEW.BookingDate, NEW.CheckInDate, NEW.CheckOutDate, NEW.CustomerID, NEW.HotelID, NEW.EmployeeSIN
+    FROM Booking
+    WHERE NEW.BookingID = Booking.BookingID;
+    RETURN NEW;
+END;
+$$ LANGUAGE PLPGSQL;
+
+CREATE OR REPLACE TRIGGER booking_insertion
+  AFTER INSERT ON Booking
+  FOR EACH ROW
+  EXECUTE PROCEDURE archive_booking();
+  
+-- copy renting to archive  
+CREATE OR REPLACE FUNCTION archive_renting()
+RETURNS TRIGGER AS
+$$
+BEGIN
+    INSERT INTO archives(RoomNum, RentingDate, CheckinDate, CheckOutDate, CustomerID, HotelID, EmployeeSIN)
+    SELECT NEW.RoomNum, NEW.RentingDate, NEW.CheckInDate,NEW.CheckOutDate, NEW.CustomerID, NEW.HotelID, NEW.EmployeeSIN
+    FROM Renting
+    WHERE NEW.RentingID = Renting.RentingID;
+    RETURN NEW;
+END;
+$$ LANGUAGE PLPGSQL;  
+  
+CREATE OR REPLACE TRIGGER renting_insertion
+	AFTER INSERT ON Renting
+	FOR EACH ROW
+	EXECUTE PROCEDURE archive_renting();
 
 /************************/
 /*  VIEWS  */
