@@ -7,15 +7,17 @@ public class Hotel {
     private final String phoneNum;
     private final Integer numRooms;
     private final String address;
+    private final String area;
     private final Integer category;
 
-    public Hotel(Integer id, Integer chainId, String email, String phoneNum, Integer numRooms, String address, Integer category) {
+    public Hotel(Integer id, Integer chainId, String email, String phoneNum, Integer numRooms, String address, String area, Integer category) {
         this.id = id;
         this.chainId = chainId;
         this.email = email;
         this.phoneNum = phoneNum;
         this.numRooms = numRooms;
         this.address = address;
+        this.area = area;
         this.category = category;
     }
     public Integer getId() {
@@ -30,6 +32,7 @@ public class Hotel {
                 + "<li>phoneNum= " + phoneNum + "</li>"
                 + "<li>numRooms= " + numRooms + "</li>"
                 + "<li>address= " + address + "</li>"
+                + "<li>area= " + area + "</li>"
                 + "<li>email= " + email + "</li>";
     }
 }

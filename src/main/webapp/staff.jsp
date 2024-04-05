@@ -22,7 +22,9 @@
 <body class="w3-light-grey">
     <jsp:include page="navbar.jsp"/>
     <div class="w3-bar w3-light-gray w3-large">
-        <a class="w3-bar-item w3-light-gray w3-mobile">Welcome, <%=employee.getName()%>!</a>
+        <a class="w3-bar-item w3-light-gray w3-mobile w3-dropdown-hover">Welcome, <%=employee.getName()%>!
+            <span class="w3-dropdown-content w3-light-grey w3-padding"><%=employee.toString()%></span>
+        </a>
         <a href="staff-logout.jsp" class="w3-bar-item w3-button w3-right w3-light-blue w3-mobile">
             Logout <i class="fa fa-sign-out w3-margin-right"></i>
         </a>

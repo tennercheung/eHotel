@@ -22,24 +22,34 @@ public class HotelService {
             return chains;
         }
     }
-    public static ArrayList<Hotel> getHotels() throws Exception {
-        String sql = "SELECT * FROM Hotel";
-        ArrayList<Hotel> hotels = new ArrayList<>();
+    public static ArrayList<String> getAreas() throws Exception {
+        String sql = "SELECT DISTINCT Area FROM Hotel";
+        ArrayList<String> areas = new ArrayList<>();
         try (ConnectionDB con = new ConnectionDB(sql)) {
             ResultSet rs = con.getResultSet();
             // iterate through the result set
-            while (rs.next()) {
-                hotels.add(new Hotel(
+            while (rs.next()) areas.add(rs.getString("Area"));
+            return areas;
+        }
+    }
+    public static Hotel getHotel(Integer id) throws Exception {
+        if (id == null) return null;
+        String sql = "SELECT * FROM Hotel WHERE HotelID=" + id;
+        try (ConnectionDB con = new ConnectionDB(sql)) {
+            ResultSet rs = con.getResultSet();
+            if (rs.next()) {
+                return new Hotel(
                     rs.getInt("HotelID"),
                     rs.getInt("ChainID"),
                     rs.getString("Email"),
                     rs.getString("PhoneNum"),
                     rs.getInt("NumRooms"),
                     rs.getString("Addr"),
-                    Integer.parseInt(rs.getString("Category"))
-                ));
+                    rs.getString("Area"),
+                    rs.getInt("Category")
+                );
             }
-            return hotels;
+            return null;
         }
     }
 }

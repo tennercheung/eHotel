@@ -3,8 +3,10 @@
 <%@ page import="java.util.ArrayList" %>
 <%
     ArrayList<HotelChain> chains = null; // get all existing hotel chains
+    ArrayList<String> areas = null; // get all existing areas
     try {
         chains = HotelService.getHotelChains();
+        areas = HotelService.getAreas();
     } catch (Exception e) {
         e.printStackTrace();
     }
@@ -22,7 +24,7 @@
 </head>
 <body class="w3-light-grey">
     <jsp:include page="navbar.jsp"/>
-    <% if (chains.size() == 0) { %>
+    <% if (chains.size() == 0 || areas.size() == 0) { %>
     <h1>Our service is unavailable. Sorry for the inconvenience</h1>
     <% } else { %>
     <header class="w3-display-container w3-content" style="max-width:1500px;">
@@ -50,29 +52,28 @@
                             <select class="w3-input w3-border" name="chain">
                                 <option value="">(any hotel chain)</option>
                                 <% for (HotelChain chain: chains) { %>
-                                <option value=<%= chain.getId() %> >Chain <%= chain.getId() %></option>
+                                <option value=<%=chain.getId()%>>Chain <%=chain.getId()%></option>
                                 <% } %>
                             </select>
                         </div>
                         <div class="w3-half">
-                            <label><i class="fa fa-user"></i> Room Capacity</label>
-                            <input class="w3-input w3-border" type="number" value="1" name="capacity" min="1" max="99" required>
+                            <label><i class="fa fa-user"></i> Room Capacity</label>: <output>1</output> person(s)
+                            <input class="w3-input w3-border" type="range" value="1" name="capacity" min="1" max="4" required oninput="this.previousElementSibling.value=this.value">
                         </div>
                     </div>
                     <div class="w3-row-padding" style="margin:8px -16px;">
                         <div class="w3-half w3-margin-bottom">
                             <label><i class="fa fa-square"></i> Hotel Area</label>
-                            <input class="w3-input w3-border" type="text" placeholder="(leave blank for all areas)" name="area">
+                            <select class="w3-input w3-border" name="area">
+                                <option value="">(any area)</option>
+                                <% for (String area: areas) { %>
+                                <option value=<%=area%>><%=area%></option>
+                                <% } %>
+                            </select>
                         </div>
                         <div class="w3-half">
-                            <label><i class="fa fa-star"></i> Hotel Category</label>
-                            <div>
-                                <label style="margin:8px"> <input type="radio" name="category" value="1" required/> 1 </label>
-                                <label style="margin:8px"> <input type="radio" name="category" value="2" required/> 2 </label>
-                                <label style="margin:8px"> <input type="radio" name="category" value="3" required/> 3 </label>
-                                <label style="margin:8px"> <input type="radio" name="category" value="4" required/> 4 </label>
-                                <label style="margin:8px"> <input type="radio" name="category" value="5" checked required/> 5 </label>
-                            </div>
+                            <label><i class="fa fa-star"></i> Hotel Category</label>: <output>1</output> star(s)
+                            <input class="w3-input w3-border" type="range" value="1" name="category" min="1" max="5" required oninput="this.previousElementSibling.value=this.value">
                         </div>
                     </div>
                     <div class="w3-row-padding" style="margin:8px -16px;">
@@ -81,8 +82,12 @@
                             <input class="w3-input w3-border" type="number" value="1" name="numrooms" min="1" required>
                         </div>
                         <div class="w3-half">
-                            <label><i class="fa fa-dollar"></i> Room Price (at most)</label>
-                            <input class="w3-input w3-border" type="number" value="0" step="0.01" name="price" min="0" required>
+                            <label><i class="fa fa-dollar"></i> Room Price</label>
+                            <div>
+                                <label style="margin:8px"> <input type="radio" name="price" value="150" checked required/> $150.00 </label>
+                                <label style="margin:8px"> <input type="radio" name="price" value="250" required/> $250.00 </label>
+                                <label style="margin:8px"> <input type="radio" name="price" value="350" required/> $350.00 </label>
+                            </div>
                         </div>
                     </div>
                     <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search</button>

@@ -15,10 +15,9 @@ public class Employee {
     public String getName() { return name; }
     @Override
     public String toString() {
-        return "<ul>"
-                + "<li>SIN: " + sin + "</li>"
-                + "<li>Name: " + name + "</li>"
-                + "<li>Position: " + position + "</li>"
-                + "<li>Address: " + address + "</li>";
+        return "SIN: " + sin + "<br>"
+             + "Name: " + name + "<br>"
+             + "Position: " + position + "<br>"
+             + "Address: " + address;
     }
 }

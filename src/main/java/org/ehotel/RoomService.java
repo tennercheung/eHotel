@@ -24,8 +24,8 @@ public class RoomService extends HttpServlet {
                     rs.getInt("HotelID"),
                     rs.getInt("RoomNum"),
                     rs.getDouble("Price"),
-                    rs.getBoolean("Extendability"),
-                    rs.getBoolean("Problem"),
+                    rs.getString("Extendability"),
+                    rs.getString("Problem"),
                     rs.getString("RoomView"),
                     rs.getInt("Capacity")
                 ));
@@ -39,8 +39,8 @@ public class RoomService extends HttpServlet {
         // ArrayList<Room> rooms;
         // try { rooms = getRooms(); } catch (Exception e) { throw new ServletException(e); }
         ArrayList<Room> rooms = new ArrayList<>();
-        rooms.add(new Room(1,1, 49.99, true, false, "Sea", 4));
-        rooms.add(new Room(1,32, 32.49, false, true, "Mountain", 3));
+        rooms.add(new Room(1,1, 49.99, "yes", "no", "Sea", 4));
+        rooms.add(new Room(1,32, 32.49, "no", "yes", "Mountain", 3));
         String jsonString = gson.toJson(rooms);
 
         response.setContentType("application/json");
