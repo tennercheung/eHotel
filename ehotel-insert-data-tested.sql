@@ -763,13 +763,13 @@ SELECT * from Customer;
 
 DELETE FROM Renting CASCADE;
 INSERT INTO Renting(RentingID,HotelID,RentingDate,CheckInDate,CheckOutDate,RoomNum,PaymentID,CustomerID,EmployeeSIN) VALUES
-(20220, 230284,'January 20, 2024','January 21, 2024','January 22, 2024',510,21094204,310322,123321111);
+(20220, 230284,'January 20, 2024','January 21, 2024','January 22, 2024',510,21094204,310322,976678565);
 SELECT * from Renting;
 
 
 DELETE FROM Booking CASCADE;
 INSERT INTO Booking(BookingID,HotelID,RoomNum,BookingDate,CheckInDate,CheckOutDate,RentingID,CustomerID,EmployeeSIN) VALUES
-(00000033,230284,510,'January 19, 2024','January 21, 2024','January 22, 2024',20220,310322,123321111);
+(00000033,230284,510,'January 19, 2024','January 21, 2024','January 22, 2024',20220,310322,976678565);
 SELECT * from Booking;
 
 

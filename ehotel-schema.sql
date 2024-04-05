@@ -125,6 +125,15 @@ CREATE TABLE Archives (
 	PRIMARY KEY(ArchiveID)
 );
 
+/************************/
+/*  Indexes  */
+/************************/
+
+-- index for Room for HotelID
+CREATE INDEX idx_room_hotelid ON Room (HotelID);
+
+-- index for Hotel for Area
+CREATE INDEX idx_hotel_area ON Hotel (Area);
 
 
 
@@ -173,9 +182,10 @@ AND (
     AND
     (rn.RoomNum IS NULL OR ('2024-01-21' >= rn.CheckOutDate OR '2024-01-22' <= rn.CheckInDate))
 );
-
+-- rooms themselves
 SELECT * FROM AvailableRooms;
-
+-- number of rooms
+SELECT COUNT(*) AS TotalRoomsPerArea FROM AvailableRooms;
 
 --View 2
 DROP VIEW IF EXISTS HotelCapacity;
@@ -185,3 +195,5 @@ FROM Room
 WHERE HotelID=230284;
 
 SELECT TotalCapacity FROM HotelCapacity;
+
+
