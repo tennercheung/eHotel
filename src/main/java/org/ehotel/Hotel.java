@@ -23,6 +23,9 @@ public class Hotel {
     public Integer getId() {
         return id;
     }
+    public Integer getChainId() {
+        return chainId;
+    }
     @Override
     public String toString() {
         return "<ul>"

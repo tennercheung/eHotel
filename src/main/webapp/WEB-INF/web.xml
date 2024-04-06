@@ -12,4 +12,8 @@
         <servlet-name>get-rooms</servlet-name>
         <servlet-class>org.ehotel.RoomService</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>get-room-info</servlet-name>
+        <servlet-class>org.ehotel.HotelService</servlet-class>
+    </servlet>
 </web-app>

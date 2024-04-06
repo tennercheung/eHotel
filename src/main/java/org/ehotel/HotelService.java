@@ -1,25 +1,45 @@
 package org.ehotel;
 
+import com.google.gson.Gson;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class HotelService {
-    public static ArrayList<HotelChain> getHotelChains() throws Exception {
-        String sql = "SELECT * FROM HotelChain";
-        ArrayList<HotelChain> chains = new ArrayList<>();
+@WebServlet("/get-room-info")
+public class HotelService extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    public static ArrayList<Integer> getHotelChains() throws Exception {
+        String sql = "SELECT ChainID FROM HotelChain";
+        ArrayList<Integer> chains = new ArrayList<>();
         try (ConnectionDB con = new ConnectionDB(sql)) {
             ResultSet rs = con.getResultSet();
             // iterate through the result set
-            while (rs.next()) {
-                chains.add(new HotelChain(
+            while (rs.next()) chains.add(rs.getInt("ChainID"));
+            return chains;
+        }
+    }
+    public static HotelChain getHotelChain(Integer id) throws Exception {
+        if (id == null) return null;
+        String sql = "SELECT * FROM HotelChain WHERE ChainID=" + id;
+        try (ConnectionDB con = new ConnectionDB(sql)) {
+            ResultSet rs = con.getResultSet();
+            if (rs.next()) {
+                return new HotelChain(
                     rs.getInt("ChainID"),
                     rs.getString("PhoneNum"),
                     rs.getString("Email"),
                     rs.getString("CentralOfficeAddr"),
                     rs.getInt("NumHotels")
-                ));
+                );
             }
-            return chains;
+            return null;
         }
     }
     public static ArrayList<String> getAreas() throws Exception {
@@ -51,5 +71,31 @@ public class HotelService {
             }
             return null;
         }
+    }
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        Gson gson = new Gson();
+        Hotel hotel; HotelChain hotelChain;
+        try {
+            hotel = getHotel(Integer.valueOf(request.getParameter("id")));
+            hotelChain = getHotelChain(hotel.getChainId());
+        }
+        catch (Exception e) { throw new ServletException(e); }
+        if (hotel == null || hotelChain == null) return;
+
+        String jsonString = gson.toJson(new Pair(hotel.toString(), hotelChain.toString()));
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
+        out.print(jsonString);
+        out.close();
+    }
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
+        out.print("{status: 200}");
+        out.close();
     }
 }

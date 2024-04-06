@@ -1,8 +1,7 @@
-<%@ page import="org.ehotel.HotelChain" %>
 <%@ page import="org.ehotel.HotelService" %>
 <%@ page import="java.util.ArrayList" %>
 <%
-    ArrayList<HotelChain> chains = null; // get all existing hotel chains
+    ArrayList<Integer> chains = null; // get all existing hotel chains
     ArrayList<String> areas = null; // get all existing areas
     try {
         chains = HotelService.getHotelChains();
@@ -51,13 +50,13 @@
                             <label><i class="fa fa-home"></i> Hotel Chain</label>
                             <select class="w3-input w3-border" name="chain">
                                 <option value="">(any hotel chain)</option>
-                                <% for (HotelChain chain: chains) { %>
-                                <option value=<%=chain.getId()%>>Chain <%=chain.getId()%></option>
+                                <% for (Integer chain: chains) { %>
+                                <option value=<%=chain%>>Chain <%=chain%></option>
                                 <% } %>
                             </select>
                         </div>
                         <div class="w3-half">
-                            <label><i class="fa fa-user"></i> Room Capacity</label>: <output>1</output> person(s)
+                            <label><i class="fa fa-user"></i> Room Capacity (at least)</label>: <output>1</output> person(s)
                             <input class="w3-input w3-border" type="range" value="1" name="capacity" min="1" max="4" required oninput="this.previousElementSibling.value=this.value">
                         </div>
                     </div>
@@ -78,7 +77,7 @@
                     </div>
                     <div class="w3-row-padding" style="margin:8px -16px;">
                         <div class="w3-half w3-margin-bottom">
-                            <label><i class="fa fa-building"></i> Number of Rooms (at most)</label>
+                            <label><i class="fa fa-building"></i> Hotel Number of Rooms (at most)</label>
                             <input class="w3-input w3-border" type="number" value="1" name="numrooms" min="1" required>
                         </div>
                         <div class="w3-half">
@@ -111,8 +110,43 @@
             </thead>
             <tbody id="room_rows"></tbody>
         </table>
-        <script src="assets/js/script.js"></script>
     </div>
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <p>Room Number <span id="room-num-display"></span></p>
+                <p id="modal-info"></p>
+            </div>
+            <div class="w3-container w3-white w3-padding-16">
+                <form method="POST" action="get-room-info" id="room_booking">
+                    <div class="w3-row-padding" style="margin:0 -16px;">
+                        <div class="w3-half w3-margin-bottom">
+                            <label><i class="fa fa-user"></i> Full Name</label>
+                            <input class="w3-input w3-border" type="text" name="name" required>
+                        </div>
+                        <div class="w3-half">
+                            <label><i class="fa fa-home"></i> Home Address</label>
+                            <input class="w3-input w3-border" type="text" name="address" required>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding" style="margin:8px -16px;">
+                        <div class="w3-half w3-margin-bottom">
+                            <label><i class="fa fa-card"></i> ID Type</label>
+                            <select class="w3-input w3-border" name="idtype" required>
+                                <option value="0">Driver's License</option>
+                                <option value="1">Health Card</option>
+                                <option value="2">Passport</option>
+                                <option value="3">SIN</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="w3-button w3-dark-grey" type="submit">Book</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
     <% } %>
 </body>
 </html>
